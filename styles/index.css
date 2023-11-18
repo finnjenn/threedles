@@ -12,7 +12,7 @@
   width: 90%;
   height: 37rem;
   /* background-image: url("/assets/purplePinkBackground.jpg"); */
-  background-image: url("/assets/DesertTwilight1600.jpg");
+  background-image: url("assets/DesertTwilight1600.jpg");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -26,7 +26,6 @@
   opacity: 0;
   transform: translateY(2rem);
   transition: 2s ease-in-out;
-  /* border: 1px solid red; */
 }
 #home-main-header.show {
   opacity: 1;
