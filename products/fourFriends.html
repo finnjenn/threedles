@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon Imports -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon_io/favicon-16x16.png"
+    />
+    <!-- <link rel="manifest" href="/site.webmanifest" /> -->
+    <!-- End Favicon Imports -->
+    <!-- Google Font Imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carattere&family=Euphoria+Script&family=Italianno&family=Parisienne&family=Petit+Formal+Script&family=Rouge+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End Google Font Imports -->
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <!-- Bootstrap Import -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- General Styles (Nav, Email, Contact) -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <!-- Page Specific Styles -->
+    <link rel="stylesheet" href="../styles/viewProduct.css" />
+    <title>Threedles - Four Friends</title>
+  </head>
+  <body>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-md background-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"
+          ><img
+            id="navbar-logo"
+            src="../assets/threedlesLogoTransparent.png"
+            alt="Threedles Logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About</a>
+            </li>
+            <li class="nav-item dropdown mx-1">
+              <a
+                class="nav-link active dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Shop
+              </a>
+              <ul class="dropdown-menu background-light">
+                <li>
+                  <a class="dropdown-item" href="../shopAll.html">Shop All</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../holiday.html">Holiday</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../advanced.html"
+                    >Advanced Designs</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../beginner.html"
+                    >Beginner Friendly</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../faq.html">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../videos.html">Videos</a>
+            </li>
+          </ul>
+          <a href="#contact">
+            <button id="nav-contact-btn" class="btn background-purple">
+              Contact
+            </button>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- End Bootstrap Navbar -->
+
+    <!-- Product -->
+    <section id="product-container">
+      <div id="product-img-container">
+        <img
+          id="product-img"
+          src="../assets/designs/FourFriends_Festival.png"
+          alt="Four Friends Design"
+        />
+        <div id="product-colors-container">
+          <div
+            class="product-color"
+            style="background-color: rgb(49, 165, 194)"
+            onmouseenter="updateColorText(`Festival`)"
+            onclick="changeImage('../assets/designs/FourFriends_Festival.png')"
+          ></div>
+          <div
+            class="product-color"
+            style="background-color: rgb(208, 101, 153)"
+            onmouseenter="updateColorText(`Tangiers`)"
+            onclick="changeImage('../assets/designs/FourFriends_Tangiers.png')"
+          ></div>
+          <div
+            class="product-color"
+            style="background-color: rgb(137, 122, 237)"
+            onmouseenter="updateColorText(`Bell Flower`)"
+            onclick="changeImage('../assets/designs/FourFriends_BellFlower.png')"
+          ></div>
+        </div>
+        <p id="color-text">Festival</p>
+      </div>
+      <div id="product-info">
+        <h1>Four Friends</h1>
+        <p id="product-size">8" x 8"</p>
+        <p id="product-pricing">Chart | <span>$28</span></p>
+        <form action="" id="product-form">
+          <select name="item-type" id="item-type">
+            <option value="28">Chart</option>
+          </select>
+          <select name="color" id="color">
+            <option value="Festival">Festival</option>
+            <option value="Tangiers">Tangiers</option>
+            <option value="Bell Flower">Bell Flower</option>
+          </select>
+          <button>Add To Cart</button>
+        </form>
+        <h2>Description</h2>
+        <p id="product-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, nemo.
+          Quaerat quidem non labore laudantium recusandae asperiores dolores
+          veniam nihil, nemo, consectetur tempore a nostrum necessitatibus
+          natus? Vel, nihil quis.
+        </p>
+      </div>
+    </section>
+    <!-- End Product -->
+
+    <!-- MailChimp Email Sign-Up -->
+    <div id="mc_embed_shell">
+      <div id="mc_embed_signup">
+        <form
+          action="https://threedles.us9.list-manage.com/subscribe/post?u=8a717a6e47e5e23c508974037&amp;id=392251aee1&amp;f_id=00aa3fe1f0"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          class="validate"
+          target="_self"
+          novalidate=""
+        >
+          <div id="mc_embed_signup_scroll">
+            <h2>Sign Up For Threedles News</h2>
+            <!-- <div class="indicates-required">
+                      <span class="asterisk">*</span> indicates required
+                    </div> -->
+            <div id="mc-field-group-container">
+              <div class="mc-field-group">
+                <label for="mce-EMAIL">Email Address</label>
+                <!-- <span class="asterisk">*</span> -->
+                <input
+                  type="email"
+                  name="EMAIL"
+                  class="required email"
+                  id="mce-EMAIL"
+                  required=""
+                  value=""
+                />
+              </div>
+              <div id="mc-first-last-container">
+                <div class="mc-field-group" style="display: inline">
+                  <label for="mce-FIRSTNAME">First Name</label>
+                  <!-- <span class="asterisk">*</span> -->
+                  <input
+                    type="text"
+                    name="FIRSTNAME"
+                    class="text"
+                    id="mce-FIRSTNAME"
+                    value=""
+                  />
+                </div>
+                <div class="mc-field-group" style="display: inline">
+                  <label for="mce-LASTNAME">Last Name</label>
+                  <!-- <span class="asterisk">*</span> -->
+                  <input
+                    type="text"
+                    name="LASTNAME"
+                    class="text"
+                    id="mce-LASTNAME"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div id="mce-responses" class="clear foot">
+              <div
+                class="response"
+                id="mce-error-response"
+                style="display: none"
+              ></div>
+              <div
+                class="response"
+                id="mce-success-response"
+                style="display: none"
+              ></div>
+            </div>
+            <div aria-hidden="true" style="position: absolute; left: -5000px">
+              /* real people should not fill this in and expect good things - do
+              not remove this or risk form bot signups */
+              <input
+                type="text"
+                name="b_8a717a6e47e5e23c508974037_392251aee1"
+                tabindex="-1"
+                value=""
+              />
+            </div>
+            <div class="optionalParent">
+              <div class="clear foot">
+                <input
+                  type="submit"
+                  name="subscribe"
+                  id="mc-embedded-subscribe"
+                  class="button"
+                  value="Sign-Up"
+                />
+                <!-- <p style="margin: 0px auto">
+                        <a
+                          href="http://eepurl.com/iDtjqU"
+                          title="Mailchimp - email marketing made easy and fun"
+                          ><span
+                            style="
+                              display: inline-block;
+                              background-color: transparent;
+                              border-radius: 4px;
+                            "
+                            ><img
+                              class="refferal_badge"
+                              src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
+                              alt="Intuit Mailchimp"
+                              style="
+                                width: 220px;
+                                height: 40px;
+                                display: flex;
+                                padding: 2px 0px;
+                                justify-content: center;
+                                align-items: center;
+                              " /></span
+                        ></a>
+                      </p> -->
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End MailChimp Email Sign-Up -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h1>Contact</h1>
+      <div id="contact-content-container">
+        <a href="mailto:sales@threedles.com"
+          ><span>Email | sales@threedles.com</span></a
+        >
+        <a href="tel:+7202368183"><span>Phone | (720) 236-8183</span></a>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../app.js"></script>
+    <script src="../productView.js"></script>
+  </body>
+</html>

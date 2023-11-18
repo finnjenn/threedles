@@ -1,0 +1,94 @@
+#product-container {
+  display: flex;
+  justify-content: center;
+  color: #420039;
+  flex-wrap: wrap;
+}
+#product-img {
+  min-width: 30rem;
+  max-width: 30rem;
+  height: 30rem;
+  object-fit: contain;
+  margin: 1rem;
+}
+#product-colors-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.product-color {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 150ms ease-in-out;
+}
+.product-color:hover {
+  transform: translateY(-2px);
+}
+#color-text {
+  font-family: "Italianno", cursive;
+  text-align: center;
+  font-size: 2.5em;
+}
+#product-info h1 {
+  font-family: "Italianno", cursive;
+  font-size: 3.5em;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  letter-spacing: 0.04em;
+}
+#product-size {
+  font-size: 1.3em;
+}
+#product-pricing {
+  margin: 2rem 0;
+}
+#product-info p span {
+  color: #932f6d;
+  font-weight: bold;
+}
+#product-form select {
+  margin-right: 1rem;
+  padding: 0.5rem;
+}
+#product-form button {
+  border: none;
+  display: block;
+  margin: 2rem 0;
+  background-color: #932f6d;
+  color: white;
+  font-size: 1.3em;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  transition: 150ms ease-in-out;
+}
+#product-form button:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+#product-info h2 {
+  font-family: "Italianno", cursive;
+  font-size: 2.75em;
+}
+#product-text {
+  max-width: 24rem;
+}
+@media (max-width: 768px) {
+  #product-info {
+    padding-left: 1rem;
+  }
+  #product-info h1 {
+    padding-top: 0;
+  }
+}
+@media (max-width: 550px) {
+  #product-img {
+    min-width: 20rem;
+    max-width: 20rem;
+    height: 20rem;
+  }
+}

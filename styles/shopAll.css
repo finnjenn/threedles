@@ -1,0 +1,83 @@
+h1 {
+  font-family: "Italianno", cursive;
+  color: #420039;
+  font-size: 5em;
+  text-align: center;
+  margin-top: 1rem;
+  text-decoration: underline 3px solid;
+  text-underline-offset: 1rem;
+  padding-bottom: 1rem;
+}
+h2 {
+  font-family: "Italianno", cursive;
+  color: #420039;
+  font-size: 3.5em;
+  margin: 1rem;
+  margin-left: 2rem;
+  scroll-margin: 10rem;
+}
+#shop-nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #dcccff;
+  font-family: "Italianno", cursive;
+  font-size: 2em;
+  text-underline-offset: 0.5rem;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 5.2rem;
+}
+#shop-nav a {
+  color: #420039;
+  text-decoration: none;
+}
+#shop-nav a:hover {
+  text-decoration: underline 2px solid;
+  cursor: pointer;
+}
+.product-row {
+  color: #420039;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.product-img,
+.product-alt-img {
+  width: 15rem;
+  height: 20rem;
+  object-fit: contain;
+}
+.product-alt-img {
+  display: none;
+}
+.design-name {
+  font-family: "Italianno", cursive;
+  font-size: 2em;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: #420039 1px solid;
+}
+.product-price {
+  font-weight: bold;
+}
+.buy-now-btn {
+  margin-bottom: 1rem;
+  background-color: #932f6d;
+  color: white;
+  transition: 150ms ease-in-out;
+  border: 2px solid #932f6d;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+}
+.buy-now-btn:hover {
+  transform: translateY(-2px);
+  background-color: white;
+  color: #932f6d;
+}
+@media (max-width: 768px) {
+  #shop-nav {
+    font-size: 1.4em;
+  }
+}
