@@ -166,7 +166,11 @@
             <option value="20">Crystal Pack</option>
             <option value="40">Combo</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/OvalThree_WhiteSilver.png', '../assets/designs/OvalThree_RoseBlush.png', '../assets/designs/OvalThree_Lilac.png'], ['White-Silver', 'Rose Blush', 'Lilac'])"
+          >
             <option value="White-Silver">White-Silver</option>
             <option value="Rose Blush">Rose Blush</option>
             <option value="Lilac">Lilac</option>

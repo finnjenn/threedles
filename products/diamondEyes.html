@@ -166,7 +166,11 @@
             <option value="48">Crystal Pack</option>
             <option value="80">Combo</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/DiamondEyes_Dazzle.png', '../assets/designs/DiamondEyes_Allure.png', '../assets/designs/DiamondEyes_Intrigue.png'], ['Dazzle', 'Allure', 'Intrigue'])"
+          >
             <option value="Dazzle">Dazzle</option>
             <option value="Allure">Allure</option>
             <option value="Intrigue">Intrigue</option>

@@ -166,7 +166,11 @@
             <option value="48">Crystal Pack</option>
             <option value="88">Combo</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/Pangea_AutumnLeaves.png', '../assets/designs/Pangea_TranquilSeas.png', '../assets/designs/Pangea_DesertTwilight.png'], ['Autumn Leaves', 'Tranquil Seas', 'Desert Twilight'])"
+          >
             <option value="Autumn Leaves">Autumn Leaves</option>
             <option value="Tranquil Seas">Tranquil Seas</option>
             <option value="Desert Twilight">Desert Twilight</option>

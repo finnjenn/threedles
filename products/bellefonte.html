@@ -160,7 +160,11 @@
             <option value="45">Crystal Pack</option>
             <option value="90">Combo</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/Bellefonte_BranchCoral.png', '../assets/designs/Bellefonte_BranchCoral.png'], ['Branch Coral', 'Bell Flower'])"
+          >
             <option value="Branch Coral">Branch Coral</option>
             <option value="Bell Flower">Bell Flower</option>
           </select>

@@ -166,7 +166,11 @@
             <option value="40">Crystal Pack</option>
             <option value="85">Combo</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/Cathedral_NotreDame.png', '../assets/designs/Cathedral_Reims.png', '../assets/designs/Cathedral_WestminsterAbby.png'], ['Notre Dame', 'Reims', 'Westminster Abby'])"
+          >
             <option value="Notre Dame">Notre Dame</option>
             <option value="Reims">Reims</option>
             <option value="Westminster Abby">Westminster Abby</option>

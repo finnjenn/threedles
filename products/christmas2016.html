@@ -166,7 +166,11 @@
             <option value="25">Crystal Pack</option>
             <option value="60">Combo</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/Xmas2016_IceBlue.png', '../assets/designs/Xmas2016_SumptuousBronze.png', '../assets/designs/Xmas2016_TraditionalGold.png',], ['Ice Blue', 'Sumptuous Bronze', 'Traditional Gold'])"
+          >
             <option value="Ice Blue">Ice Blue</option>
             <option value="Sumptuous Bronze">Sumptuous Bronze</option>
             <option value="Traditional Gold">Traditional Gold</option>

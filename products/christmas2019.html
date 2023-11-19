@@ -166,7 +166,11 @@
             <option value="32">Crystal Pack</option>
             <option value="60">Combo</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/Xmas2019_Green.png', '../assets/designs/Xmas2019_Blue.png', '../assets/designs/Xmas2019_Red.png', '../assets/designs/AllThatGlitters_VeryChristmas.png'], ['Green', 'Blue', 'Red'])"
+          >
             <option value="Green">Green</option>
             <option value="Blue">Blue</option>
             <option value="Red">Red</option>

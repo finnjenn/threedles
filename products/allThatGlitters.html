@@ -172,7 +172,11 @@
             <option value="50">Crystal Pack</option>
             <option value="95">Combo</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/AllThatGlitters_TealTreasures.png', '../assets/designs/AllThatGlitters_GoldFrost.png', '../assets/designs/AllThatGlitters_PolarIce.png', '../assets/designs/AllThatGlitters_VeryChristmas.png'], ['Teal Treasures', 'Gold Frost', 'Polar Ice', 'Very Christmas'])"
+          >
             <option value="Teal Treasures">Teal Treasures</option>
             <option value="Gold Frost">Gold Frost</option>
             <option value="Polar Ice">Polar Ice</option>

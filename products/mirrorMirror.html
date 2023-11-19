@@ -172,7 +172,11 @@
             <option value="28">Crystal Pack</option>
             <option value="46">Combo</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/Mirror_CarribbeanSeas.png', '../assets/designs/Mirror_Carousel.png', '../assets/designs/Mirror_Embers.png', '../assets/designs/Mirror_VictorianJewel.png'], ['Caribbean Seas', 'Carousel', 'Embers', 'Victorian Jewel'])"
+          >
             <option value="Caribbean Seas">Caribbean Seas</option>
             <option value="Carousel">Carousel</option>
             <option value="Embers">Embers</option>

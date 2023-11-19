@@ -166,7 +166,11 @@
             <option value="44">Crystal Pack</option>
             <option value="84">Combo</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/LaMision_Concepcion.jpeg', '../assets/designs/LaMision_Espada.png', '../assets/designs/LaMision_TheAlamo.png'], ['Concepcion', 'Espada', 'The Alamo'])"
+          >
             <option value="Concepcion">Concepcion</option>
             <option value="Espada">Espada</option>
             <option value="The Alamo">The Alamo</option>

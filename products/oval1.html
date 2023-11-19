@@ -166,7 +166,11 @@
             <option value="20">Crystal Pack</option>
             <option value="40">Combo</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/OvalOne_SantaFeSage.png', '../assets/designs/OvalOne_Apricot.png', '../assets/designs/OvalOne_WhiteSilver.png'], ['Santa Fe Sage', 'Apricot', 'White-Silver'])"
+          >
             <option value="Santa Fe Sage">Santa Fe Sage</option>
             <option value="Apricot">Apricot</option>
             <option value="White-Silver">White-Silver</option>

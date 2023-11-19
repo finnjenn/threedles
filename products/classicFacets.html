@@ -161,7 +161,11 @@
           <select name="item-type" id="item-type">
             <option value="44">Chart</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/ClassicFacets_Aquamarine.png', '../assets/designs/ClassicFacets_Amethyst.png', '../assets/designs/ClassicFacets_Amber.png'], ['Aquamarine', 'Amethyst', 'Amber'])"
+          >
             <option value="Aquamarine">Aquamarine</option>
             <option value="Amethyst">Amethyst</option>
             <option value="Amber">Amber</option>

@@ -160,7 +160,11 @@
             <option value="45">Crystal Pack</option>
             <option value="78">Combo</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/ThroughTheLookingGlass_Bronze.png', '../assets/designs/ThroughTheLookingGlass_Citrine.jpg'], ['Bronze', 'Citrine'])"
+          >
             <option value="Bronze">Bronze</option>
             <option value="Citrine">Citrine</option>
           </select>

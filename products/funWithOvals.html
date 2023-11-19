@@ -166,7 +166,11 @@
             <option value="40">Crystal Pack</option>
             <option value="75">Combo</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/FunWithOvals_Christmas.jpg', '../assets/designs/FunWithOvals_Easter.jpg', '../assets/designs/FunWithOvals_Halloween.jpg'], ['Christmas', 'Easter', 'Halloween'])"
+          >
             <option value="Christmas">Christmas</option>
             <option value="Easter">Easter</option>
             <option value="Halloween">Halloween</option>

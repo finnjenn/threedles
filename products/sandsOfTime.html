@@ -166,7 +166,11 @@
             <option value="30">Crystal Pack</option>
             <option value="50">Combo</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/SandsOfTime_Kolam.png', '../assets/designs/SandsOfTime_Mayan.png', '../assets/designs/SandsOfTime_Calypso.png'], ['Kolam', 'Mayan', 'Calypso'])"
+          >
             <option value="Kolam">Kolam</option>
             <option value="Mayan">Mayan</option>
             <option value="Calypso">Calypso</option>

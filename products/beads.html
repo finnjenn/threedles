@@ -161,7 +161,11 @@
           <select name="item-type" id="item-type">
             <option value="36">Chart</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/BeadsCubed_ChristmasElegance.png', '../assets/designs/BeadsCubed_GardenElegance.png', '../assets/designs/BeadsCubed_WinterElegance.png'], ['Christmas Elegance', 'Garden Elegance', 'Winter Elegance'])"
+          >
             <option value="Christmas Elegance">Christmas Elegance</option>
             <option value="Garden Elegance">Garden Elegance</option>
             <option value="Winter Elegance">Winter Elegance</option>

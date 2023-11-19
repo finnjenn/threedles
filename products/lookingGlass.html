@@ -166,7 +166,11 @@
             <option value="32">Crystal Pack</option>
             <option value="70">Combo</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/LookingGlass_Yellow.png', '../assets/designs/LookingGlass_Blue.png', '../assets/designs/LookingGlass_Black.png'], ['Yellow', 'Blue', 'Black'])"
+          >
             <option value="Yellow">Yellow</option>
             <option value="Blue">Blue</option>
             <option value="Black">Black</option>

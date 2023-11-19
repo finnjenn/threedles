@@ -167,7 +167,11 @@
           <select name="item-type" id="item-type">
             <option value="28">Chart</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/SeasonalRays_Summer.png', '../assets/designs/SeasonalRays_Fall.png', '../assets/designs/SeasonalRays_Winter.png', '../assets/designs/SeasonalRays_Spring.png'], ['Summer', 'Fall', 'Winter', 'Spring'])"
+          >
             <option value="Summmer">Summmer</option>
             <option value="Fall">Fall</option>
             <option value="Winter">Winter</option>

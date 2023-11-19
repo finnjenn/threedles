@@ -166,7 +166,11 @@
             <option value="40">Crystal Pack</option>
             <option value="78">Combo</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/TopsyTurvy_Kelp.png', '../assets/designs/TopsyTurvy_ApricotGrove.png', '../assets/designs/TopsyTurvy_MorningGlory.png'], ['Kelp', 'Apricot Grove', 'Morning Glory'])"
+          >
             <option value="Kelp">Kelp</option>
             <option value="Apricot Grove">Apricot Grove</option>
             <option value="Morning Glory">Morning Glory</option>

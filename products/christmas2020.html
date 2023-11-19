@@ -166,7 +166,11 @@
             <option value="32">Crystal Pack</option>
             <option value="60">Combo</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/Xmas2020_TisTheSeason.png', '../assets/designs/Xmas2020_WinterSnowfall.png', '../assets/designs/Xmas2020_GoldenGifts.png'], ['Tis The Season', 'Winter Snowfall', 'Golden Gifts'])"
+          >
             <option value="Tis The Season">Tis The Season</option>
             <option value="Winter Snowfall">Winter Snowfall</option>
             <option value="Golden Gifts">Golden Gifts</option>

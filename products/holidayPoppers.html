@@ -161,7 +161,11 @@
           <select name="item-type" id="item-type">
             <option value="48">Chart</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/HolidayPoppers_Halloween.png', '../assets/designs/HolidayPoppers_Christmas.png', '../assets/designs/HolidayPoppers_4thOfJuly.png'], ['Halloween', 'Christmas', '4th Of July'])"
+          >
             <option value="Halloween">Halloween</option>
             <option value="Christmas">Christmas</option>
             <option value="4th Of July">4th Of July</option>

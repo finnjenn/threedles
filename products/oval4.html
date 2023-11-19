@@ -166,7 +166,11 @@
             <option value="20">Crystal Pack</option>
             <option value="40">Combo</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/OvalFour_LeventeenBlue.png', '../assets/designs/OvalFour_Aquamarina.png', '../assets/designs/OvalFour_Sandstone.png'], ['Leventeen Blue', 'Aquamarina', 'Sandstone'])"
+          >
             <option value="Leventeen Blue">Leventeen Blue</option>
             <option value="Aquamarina">Aquamarina</option>
             <option value="Sandstone">Sandstone</option>

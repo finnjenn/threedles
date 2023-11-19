@@ -1,4 +1,3 @@
-// document.addEventListener("DOMContentLoaded", () => {
 // Get all product elements
 const productElements = document.querySelectorAll(".product-container");
 
@@ -19,4 +18,3 @@ productElements.forEach((product) => {
     altImage.style.display = "none";
   });
 });
-// });

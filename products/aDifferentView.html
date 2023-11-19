@@ -166,7 +166,11 @@
             <option value="40">Crystal Pack</option>
             <option value="80">Combo</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/ADifferentView_Black.png', '../assets/designs/ADifferentView_GoldenGlow.png', '../assets/designs/ADifferentView_KoralKiss.png'], ['Black', 'Golden Glow', 'Koral Kiss'])"
+          >
             <option value="Black">Black</option>
             <option value="Golden Glow">Golden Glow</option>
             <option value="Koral Kiss">Koral Kiss</option>

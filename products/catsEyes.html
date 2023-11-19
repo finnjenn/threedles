@@ -166,7 +166,11 @@
             <option value="48">Crystal Pack</option>
             <option value="88">Combo</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/CatsEyes_CleopatrasEyes.png', '../assets/designs/CatsEyes_GaeasEyes.png', '../assets/designs/CatsEyes_VenusEyes.png'], [`Cleopatra's Eyes`, `Gaea's Eyes`, `Venus' Eyes`])"
+          >
             <option value="Cleopatra's Eyes">Cleopatra's Eyes</option>
             <option value="Gaea's Eyes">Gaea's Eyes</option>
             <option value="Venus' Eyes">Venus' Eyes</option>

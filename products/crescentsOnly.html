@@ -172,7 +172,11 @@
             <option value="20">Crystal Pack</option>
             <option value="40">Combo</option>
           </select>
-          <select name="color" id="color">
+          <select
+            name="color"
+            id="color"
+            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/CresentsOnly_ChristmasOrnament.png', '../assets/designs/CresentsOnly_ChiliPeppers.png', '../assets/designs/CresentsOnly_HarvestGrape.png', '../assets/designs/CresentsOnly_AntiqueSilk.png'], ['Christmas Ornament', 'Chili Peppers', 'Harvest Grape', 'Antique Silk'])"
+          >
             <option value="Christmas Ornament">Christmas Ornament</option>
             <option value="Chili Peppers">Chili Peppers</option>
             <option value="Harvest Grape">Harvest Grape</option>
