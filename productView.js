@@ -1,4 +1,3 @@
-// Function to update the color description
 function updateColorText(color) {
   let colorText = document.getElementById("color-text");
   colorText.innerHTML = color;
