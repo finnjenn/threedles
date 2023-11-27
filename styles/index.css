@@ -137,8 +137,8 @@
     font-size: 8em;
   }
   #feature-header {
-    text-decoration: 3px underline;
-    text-underline-offset: 1rem;
+    /* text-decoration: 3px underline; */
+    /* text-underline-offset: 1rem; */
   }
   .product-img-container {
     border-bottom: none;
