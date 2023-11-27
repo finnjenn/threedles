@@ -1,5 +1,6 @@
 #feature-header,
-#comments-header {
+#comments-header,
+#best-seller-header {
   font-family: "Italianno", cursive;
   text-align: center;
   font-size: 4em;
@@ -52,7 +53,6 @@
 .product-container {
   text-align: center;
   margin: 0 0.5rem;
-  padding-bottom: 1rem;
 }
 .product-container p {
   font-size: 1.2em;

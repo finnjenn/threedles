@@ -1,0 +1,33 @@
+h1 {
+  font-family: Italianno, cursive;
+  font-size: 4em;
+  text-align: center;
+  color: #420039;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+}
+h2 {
+  font-family: Italianno, cursive;
+  color: #420039;
+  font-size: 3em;
+  text-align: center;
+}
+#main {
+  display: flex;
+  border-radius: 1rem;
+  width: 60rem;
+  margin: 0 auto;
+}
+#main-paragraph {
+  margin: auto 3rem;
+  color: #420039;
+  font-size: 1.3em;
+  line-height: 2em;
+  letter-spacing: 0.01em;
+  /* border: 1px solid black; */
+}
+#kurdy-image {
+  width: 25rem;
+  border-radius: 1rem;
+}
