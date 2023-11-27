@@ -4,7 +4,7 @@
   font-family: "Italianno", cursive;
   text-align: center;
   font-size: 4em;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
   color: #420039;
   letter-spacing: 0.05em;
 }
@@ -53,6 +53,7 @@
 .product-container {
   text-align: center;
   margin: 0 0.5rem;
+  margin-bottom: 1rem;
 }
 .product-container p {
   font-size: 1.2em;
@@ -140,7 +141,7 @@
     text-underline-offset: 1rem;
   }
   .product-img-container {
-    border-top: none;
+    border-bottom: none;
   }
   .buy-now-btn {
     padding: 0.5rem 1.5rem;
