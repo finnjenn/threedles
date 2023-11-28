@@ -30,11 +30,38 @@ h2 {
   letter-spacing: 0.01em;
   text-align: center;
   text-wrap: balance;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   /* border: 1px solid black; */
 }
 #kurdy-image {
   width: 25rem;
   border-radius: 1rem;
+}
+#about-body {
+  width: 50rem;
+  margin: 2rem auto;
+  padding: 0 4rem;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1em;
+  /* border-left: 2px solid #420039;
+  border-right: 2px solid #420039; */
+}
+#about-body h3 {
+  font-family: Italianno, cursive;
+  font-size: 3.5em;
+  color: #420039;
+  margin-top: 3rem;
+  text-wrap: balance;
+}
+#about-body p {
+  text-wrap: balance;
+  line-height: 2.5em;
+  letter-spacing: 0.01em;
+  color: #6e6e6e;
+  margin-bottom: 2rem;
+}
+#catsEyes {
 }
 @media (max-width: 960px) {
   #main {
