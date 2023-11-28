@@ -234,6 +234,7 @@
     </section>
     <!-- End Featured Products -->
 
+    <!-- Praise for Threedles -->
     <section id="comments" class="background-lavender">
       <h2 id="comments-header">Praise For Threedles</h2>
       <!-- Bootstrap Comments Carousel -->
@@ -280,7 +281,9 @@
           </div>
         </div>
       </div>
+      <!-- End Comments Carousel -->
     </section>
+    <!-- End Praise for Threedles -->
 
     <!-- MailChimp Email Sign-Up -->
     <div id="mc_embed_shell">
@@ -411,6 +414,36 @@
       </div>
     </section>
     <!-- End Contact Section -->
+
+    <!-- Cart button and cart offcanvas -->
+    <button
+      id="cart-btn"
+      class="btn background-lavender"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasCart"
+      aria-controls="offcanvasCart"
+    >
+      <img id="cart-icon" src="assets/cart-line-icon.png" alt="Cart Icon" />
+    </button>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasCart"
+      aria-labelledby="offcanvasCartLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasCartLabel">Offcanvas right</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">...</div>
+    </div>
+    <!-- End cart button and cart offcanvas -->
 
     <!-- Scripts -->
     <script

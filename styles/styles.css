@@ -116,6 +116,16 @@ input.button:hover {
   border: 2px solid #f6f2ff;
   transform: translateY(2px);
 }
+#cart-btn {
+  position: fixed;
+  top: 50vh;
+  right: 0;
+  /* border: 1px solid red; */
+}
+#cart-icon {
+  width: 2.5rem;
+  position: sticky;
+}
 .background-dark {
   background-color: #420039;
 }
