@@ -70,6 +70,7 @@
   font-size: 3.5em;
   padding-top: 2rem;
   padding-bottom: 1rem;
+  text-wrap: balance;
 }
 #mc-field-group-container {
   margin: 0 20%;
