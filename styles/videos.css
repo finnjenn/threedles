@@ -5,51 +5,55 @@ h1 {
   color: #420039;
   margin-top: 2rem;
 }
-h2 {
-  font-family: "Italianno", cursive;
-  font-size: 3.5em;
-  color: #420039;
-  margin-left: 2rem;
-}
-.video-chart-container {
+.video-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+}
+.item-container {
+  /* border: 1px solid black; */
+  text-align: center;
   margin-bottom: 2rem;
 }
-.chart-container,
-.video {
-  max-width: 35%;
+.item-container p {
+  font-family: "Italianno", cursive;
+  color: #420039;
+  font-size: 3rem;
+  border-top: #420039 2px solid;
 }
-.chart-container {
-  position: relative;
+.chart-image {
+  object-fit: contain;
+  width: 22rem;
+  height: 22rem;
 }
-.chart {
-  width: 100%;
+.btn-box {
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 1px solid red; */
 }
 .download-btn {
-  position: absolute;
-  top: 4px;
-  right: 3px;
   background-color: #932f6d;
   color: white;
-  padding: 0.5rem 0.75rem;
   font-weight: bold;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  transition: 200ms ease-in-out;
+  outline: 3px solid #932f6d;
+}
+.youtube-btn {
+  background-color: #e07be0;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  transition: 200ms ease-in-out;
+  outline: 3px solid #e07be0;
 }
 .download-btn:hover {
-  transform: translateY(-2px);
+  background-color: white;
+  color: #932f6d;
 }
-@media (max-width: 768px) {
-  .video-chart-container {
-    flex-direction: column;
-  }
-  .chart-container,
-  .video {
-    max-width: 70%;
-  }
-  .video {
-    margin-bottom: 1rem;
-  }
+.youtube-btn:hover {
+  background-color: white;
 }

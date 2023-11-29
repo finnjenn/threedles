@@ -12,6 +12,7 @@
   margin: 0 auto;
   width: 90%;
   height: 37rem;
+  /* background-image: url("../assets/DesertTwilightNoBG.png"); */
   background-image: url("../assets/DesertTwilight1600.jpg");
   background-size: cover;
   background-position: center;
