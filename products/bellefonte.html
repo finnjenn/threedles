@@ -154,7 +154,7 @@
           Chart | <span>$55</span> Crystal Pack | <span>$45</span> Combo |
           <span>$90</span>
         </p>
-        <form action="" id="product-form">
+        <form action="" id="product-form" onsubmit="return getItemInfo()">
           <select name="item-type" id="item-type">
             <option value="55">Chart</option>
             <option value="45">Crystal Pack</option>
@@ -319,6 +319,7 @@
       data-bs-toggle="offcanvas"
       data-bs-target="#offcanvasCart"
       aria-controls="offcanvasCart"
+      onclick="displayCart()"
     >
       <img id="cart-icon" src="../assets/cart-line-icon.png" alt="Cart Icon" />
     </button>
@@ -337,7 +338,14 @@
           aria-label="Close"
         ></button>
       </div>
-      <div class="offcanvas-body">...</div>
+      <div class="offcanvas-body">
+        <div id="cart-container"></div>
+        <p id="cart-total">Total: $0</p>
+        <a href="../checkout.html">
+          <button id="checkout">Checkout</button>
+        </a>
+        <button id="clear-cart" onclick="clearCart()">Clear Cart</button>
+      </div>
     </div>
     <!-- End cart button and cart offcanvas -->
 

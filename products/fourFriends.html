@@ -157,7 +157,7 @@
         <h1>Four Friends</h1>
         <p id="product-size">8" x 8"</p>
         <p id="product-pricing">Chart | <span>$28</span></p>
-        <form action="" id="product-form">
+        <form action="" id="product-form" onsubmit="return getItemInfo()">
           <select name="item-type" id="item-type">
             <option value="28">Chart</option>
           </select>
@@ -321,6 +321,7 @@
       data-bs-toggle="offcanvas"
       data-bs-target="#offcanvasCart"
       aria-controls="offcanvasCart"
+      onclick="displayCart()"
     >
       <img id="cart-icon" src="../assets/cart-line-icon.png" alt="Cart Icon" />
     </button>
@@ -339,7 +340,14 @@
           aria-label="Close"
         ></button>
       </div>
-      <div class="offcanvas-body">...</div>
+      <div class="offcanvas-body">
+        <div id="cart-container"></div>
+        <p id="cart-total">Total: $0</p>
+        <a href="../checkout.html">
+          <button id="checkout">Checkout</button>
+        </a>
+        <button id="clear-cart" onclick="clearCart()">Clear Cart</button>
+      </div>
     </div>
     <!-- End cart button and cart offcanvas -->
 
