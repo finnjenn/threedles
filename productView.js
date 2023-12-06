@@ -10,3 +10,13 @@ function changeColorwayFromSelect(index, srcArray, colorArray) {
   changeImage(srcArray[index]);
   updateColorText(colorArray[index]);
 }
+
+const toastTrigger = document.querySelector("#product-form button");
+const toastLiveExample = document.getElementById("liveToast");
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+  toastTrigger.addEventListener("click", () => {
+    toastBootstrap.show();
+  });
+}

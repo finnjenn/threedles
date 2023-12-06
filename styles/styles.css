@@ -181,6 +181,9 @@ input.button:hover {
 #view-cart button:hover {
   text-decoration: underline;
 }
+.toast-header img {
+  width: 2rem;
+}
 .background-dark {
   background-color: #420039;
 }
