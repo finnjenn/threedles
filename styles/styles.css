@@ -125,6 +125,7 @@ input.button:hover {
   top: 50vh;
   right: 0;
   /* border: 1px solid red; */
+  outline: 3px solid #dcccff;
 }
 #cart-icon {
   width: 2.5rem;
