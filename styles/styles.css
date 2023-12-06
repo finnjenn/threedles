@@ -131,20 +131,17 @@ input.button:hover {
   position: sticky;
 }
 .cart-item {
-  display: flex;
-  /* border: 1px solid red; */
-  justify-content: space-between;
   padding: 1rem 0.5rem;
-  cursor: pointer;
 }
-.cart-item:hover {
-  text-decoration: line-through 2px;
+.cart-info-box {
+  display: flex;
+  justify-content: space-between;
 }
 .cart-item:nth-of-type(2n) {
   background-color: #dcccff;
 }
-/* .cart-price, */
-.item-design {
+.item-design,
+.item-type {
   font-weight: bold;
 }
 .item-id {
