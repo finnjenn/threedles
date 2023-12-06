@@ -170,13 +170,15 @@ input.button:hover {
   background-color: white;
   color: #932f6d;
 }
-#clear-cart {
+#view-cart {
   display: block;
   margin: 0 auto;
+}
+#view-cart button {
   border: none;
   background-color: transparent;
 }
-#clear-cart:hover {
+#view-cart button:hover {
   text-decoration: underline;
 }
 .background-dark {
