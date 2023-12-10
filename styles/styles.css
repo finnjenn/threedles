@@ -34,6 +34,14 @@
 #nav-contact-btn:hover {
   color: #932f6d;
 }
+.banner {
+  background-color: #932f6d;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 0.25rem 0;
+}
 #contact {
   text-align: center;
   font-family: "Italianno", cursive;
@@ -211,5 +219,8 @@ input.button:hover {
   #contact-content-container a {
     width: 100%;
     border-bottom: none;
+  }
+  #cart-icon {
+    width: 1.5rem;
   }
 }

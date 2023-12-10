@@ -1,0 +1,22 @@
+h1 {
+  font-family: "Italianno", cursive;
+  color: #420039;
+  font-size: 5.5em;
+  text-align: center;
+  margin-top: 1rem;
+  text-decoration: underline 3px solid;
+  text-underline-offset: 1rem;
+  padding-bottom: 1rem;
+}
+#checkout-container {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+.info-box {
+  display: flex;
+  justify-content: space-between;
+}
+/* .info-box:nth-of-type(n + 3) {
+  background-color: #dcccff;
+} */
