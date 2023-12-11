@@ -73,18 +73,14 @@ function handleCopyBtnClick() {
   }
   let total = document.querySelector("#checkout-total span").innerHTML;
   cartList += `Total : $${total}`;
-  //   console.log(cartList);
   navigator.clipboard
     .writeText(cartList)
     .then(() => {
-      //   console.log("Text copied to clipboard:", cartList);
       window.location.href =
         "https://docs.google.com/forms/d/e/1FAIpQLSczpdz9PEAFsEMa2UKrR1_K5LtD8pcmjpY-7VWOlpzdD9YLCw/viewform?usp=sf_link";
     })
     .catch((err) => {
       console.error("Unable to copy to clipboard.", err);
     });
-  //   window.location.href =
-  //     "https://docs.google.com/forms/d/e/1FAIpQLSczpdz9PEAFsEMa2UKrR1_K5LtD8pcmjpY-7VWOlpzdD9YLCw/viewform?usp=sf_link";
 }
 displayCheckout();

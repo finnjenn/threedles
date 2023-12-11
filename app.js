@@ -39,26 +39,6 @@ function getItemInfo() {
   });
   return false;
 }
-
-// function removeItem(id) {
-//   console.log("Removing item");
-//   let currentCart = JSON.parse(sessionStorage.getItem("cartArray"));
-//   currentCart = currentCart.filter((item) => item.id !== id);
-//   clearCart();
-//   sessionStorage.setItem("cartArray", JSON.stringify(currentCart));
-//   displayCart();
-//   console.log(JSON.parse(sessionStorage.getItem("cartArray")));
-// }
-// function clearCart() {
-//   sessionStorage.removeItem("cartArray");
-//   document.querySelector("#cart-container").remove();
-//   let offcanvas = document.querySelector(".offcanvas-body");
-//   let newCartContainer = document.createElement("div");
-//   newCartContainer.id = "cart-container";
-//   offcanvas.prepend(newCartContainer);
-//   let totalElement = document.querySelector("#cart-total");
-//   totalElement.innerHTML = "Total: $0";
-// }
 function displayCart() {
   if (
     !sessionStorage.getItem("cartArray") ||

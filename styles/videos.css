@@ -36,19 +36,19 @@ h1 {
   background-color: #932f6d;
   color: white;
   font-weight: bold;
-  border: none;
+  /* border: none; */
   border-radius: 0.5rem;
   padding: 0.5rem 2rem;
   transition: 200ms ease-in-out;
-  outline: 3px solid #932f6d;
+  border: 3px solid #932f6d;
 }
 .youtube-btn {
   background-color: #e07be0;
-  border: none;
+  /* border: none; */
   border-radius: 0.5rem;
   padding: 0.5rem 2rem;
   transition: 200ms ease-in-out;
-  outline: 3px solid #e07be0;
+  border: 3px solid #e07be0;
 }
 .download-btn:hover {
   background-color: white;

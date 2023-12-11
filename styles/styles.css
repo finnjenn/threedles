@@ -133,7 +133,7 @@ input.button:hover {
   top: 50vh;
   right: 0;
   /* border: 1px solid red; */
-  outline: 3px solid #dcccff;
+  border: 3px solid #dcccff;
 }
 #cart-icon {
   width: 2.5rem;
@@ -165,8 +165,8 @@ input.button:hover {
   text-align: end;
 }
 #checkout {
-  border: none;
-  outline: 2px solid #932f6d;
+  /* border: none; */
+  border: 2px solid #932f6d;
   background-color: #932f6d;
   color: white;
   padding: 0.5rem 3rem;
@@ -186,6 +186,7 @@ input.button:hover {
 #view-cart button {
   border: none;
   background-color: transparent;
+  color: black;
 }
 #view-cart button:hover {
   text-decoration: underline;
