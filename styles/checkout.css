@@ -11,12 +11,63 @@ h1 {
 #checkout-container {
   width: 90%;
   margin: 0 auto;
-  font-size: 1.2rem;
+  /* border: 1px solid red; */
+  color: #420039;
 }
-.info-box {
+.checkout-item {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+  border-bottom: #420039 2px solid;
 }
-/* .info-box:nth-of-type(n + 3) {
-  background-color: #dcccff;
-} */
+.x-icon {
+  margin-right: 2rem;
+  transition: 200ms ease-in-out;
+}
+.x-icon:hover {
+  transform: scale(1.1);
+}
+.checkout-design-img {
+  width: 8rem;
+  height: 8rem;
+  margin-right: 2rem;
+  object-fit: contain;
+}
+.text-box p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+}
+.text-box:nth-of-type(1) {
+  flex-grow: 1;
+}
+.checkout-item-price {
+  text-align: end;
+}
+.checkout-item-price,
+.checkout-item-design {
+  font-weight: bold;
+}
+#checkout-total {
+  text-align: end;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-right: 3rem;
+  color: #420039;
+}
+@media (max-width: 768px) {
+  .x-icon,
+  .checkout-design-img {
+    margin-right: 0.5rem;
+  }
+  .checkout-design-img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+  }
+  .text-box p {
+    font-size: 1em;
+  }
+}

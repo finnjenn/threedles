@@ -25,36 +25,40 @@ function getItemInfo() {
   let price = itemSelect.value;
   let design = document.querySelector("#product-info h1").innerHTML;
   let color = document.querySelector("#color").value;
-  console.log(design, price, color, itemType);
+  let fullImgSrc = document.querySelector("#product-img").src;
+  let startIndex = fullImgSrc.indexOf("assets");
+  let imgSrc = fullImgSrc.substring(startIndex);
+  console.log(design, price, color, itemType, imgSrc);
   pushToCart({
     design: design,
     price: price,
     color: color,
     itemType: itemType,
     id: crypto.randomUUID(),
+    imgSrc: imgSrc,
   });
   return false;
 }
 
-function removeItem(id) {
-  console.log("Removing item");
-  let currentCart = JSON.parse(sessionStorage.getItem("cartArray"));
-  currentCart = currentCart.filter((item) => item.id !== id);
-  clearCart();
-  sessionStorage.setItem("cartArray", JSON.stringify(currentCart));
-  displayCart();
-  console.log(JSON.parse(sessionStorage.getItem("cartArray")));
-}
-function clearCart() {
-  sessionStorage.removeItem("cartArray");
-  document.querySelector("#cart-container").remove();
-  let offcanvas = document.querySelector(".offcanvas-body");
-  let newCartContainer = document.createElement("div");
-  newCartContainer.id = "cart-container";
-  offcanvas.prepend(newCartContainer);
-  let totalElement = document.querySelector("#cart-total");
-  totalElement.innerHTML = "Total: $0";
-}
+// function removeItem(id) {
+//   console.log("Removing item");
+//   let currentCart = JSON.parse(sessionStorage.getItem("cartArray"));
+//   currentCart = currentCart.filter((item) => item.id !== id);
+//   clearCart();
+//   sessionStorage.setItem("cartArray", JSON.stringify(currentCart));
+//   displayCart();
+//   console.log(JSON.parse(sessionStorage.getItem("cartArray")));
+// }
+// function clearCart() {
+//   sessionStorage.removeItem("cartArray");
+//   document.querySelector("#cart-container").remove();
+//   let offcanvas = document.querySelector(".offcanvas-body");
+//   let newCartContainer = document.createElement("div");
+//   newCartContainer.id = "cart-container";
+//   offcanvas.prepend(newCartContainer);
+//   let totalElement = document.querySelector("#cart-total");
+//   totalElement.innerHTML = "Total: $0";
+// }
 function displayCart() {
   if (
     !sessionStorage.getItem("cartArray") ||
