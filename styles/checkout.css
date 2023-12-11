@@ -57,6 +57,36 @@ h1 {
   margin-right: 3rem;
   color: #420039;
 }
+h2 {
+  text-align: center;
+  color: #420039;
+}
+.info {
+  text-align: center;
+  color: #420039;
+  font-size: 1.2em;
+  margin: 0 10%;
+  text-wrap: balance;
+  margin-bottom: 1rem;
+  line-height: 2em;
+}
+#copy-btn {
+  display: block;
+  margin: 0 auto;
+  background-color: #932f6d;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 4rem;
+  font-size: 1.5em;
+  outline: 2px solid #932f6d;
+  transition: 200ms ease-in-out;
+  margin-bottom: 2rem;
+}
+#copy-btn:hover {
+  background-color: white;
+  color: #932f6d;
+}
 @media (max-width: 768px) {
   .x-icon,
   .checkout-design-img {
