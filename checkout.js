@@ -128,6 +128,8 @@ paypal
       // Capture the funds when the user approves the payment
       return actions.order.capture().then(function (details) {
         // Handle the successful payment here
+        let checkoutForm = document.querySelector("#checkout-form");
+        checkoutForm.submit();
         alert("Transaction completed by " + details.payer.name.given_name);
       });
     },
