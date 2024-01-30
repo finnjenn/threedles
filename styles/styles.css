@@ -2,8 +2,8 @@
   position: sticky;
   top: 0;
   z-index: 1;
-  transform: translateY(-5rem);
-  transition: 1500ms ease-in-out;
+  /* transform: translateY(-5rem); */
+  /* transition: 1500ms ease-in-out; */
   font-size: 1.2em;
 }
 .navbar.show {

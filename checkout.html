@@ -45,11 +45,14 @@
     <!-- Page Specific Styles -->
     <link rel="stylesheet" href="styles/checkout.css" />
     <title>Threedles - Checkout</title>
+    <!-- PayPal Script -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AQ1gxDLveJGJwfMTvbWnfSdKfjO6-4DBbhkGBgWDHjwDpYz6xZJuDcZq9mwxcuzJo_LCPuEJSx4IaOAC&components=buttons"></script>
+    <!-- Reusable Components -->
     <script src="components/contact.js"></script>
   </head>
   <body>
     <!-- Bootstrap Navbar -->
-    <nav class="navbar navbar-expand-md background-light">
+    <!-- <nav class="navbar navbar-expand-md background-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"
           ><img
@@ -119,9 +122,14 @@
           </a>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <!-- End Bootstrap Navbar -->
 
+    <button id="back-btn" class="checkout-nav-btn">Back</button>
+
+    <a href="index.html">
+      <button id="home-btn" class="checkout-nav-btn">Home</button>
+    </a>
     <h1>Checkout</h1>
     <!-- Checkout Container -->
     <section id="checkout-section">
@@ -161,7 +169,52 @@
     </section>
     <p id="checkout-total">Total : $<span>0</span></p>
 
-    <h2>Attention!</h2>
+    <h2>Shipping Info</h2>
+    <form
+      action="https://formspree.io/f/mvoeznoa"
+      method="POST"
+      name="checkout-form"
+    >
+      <label for="firstname" class="input-half">
+        First Name
+        <input type="text" name="firstname" required />
+      </label>
+      <label for="lastname" class="input-half">
+        Last Name
+        <input type="text" name="lastname" required />
+      </label>
+      <label for="email" class="input-full">
+        Email Address
+        <input type="email" name="email" required />
+      </label>
+      <label for="address1" class="input-full">
+        Street Address
+        <input type="text" name="address1" required />
+      </label>
+      <label for="address2" class="input-full">
+        Street Address Line 2
+        <input type="text" name="address2" />
+      </label>
+      <label for="city" class="input-half">
+        City
+        <input type="text" name="city" required />
+      </label>
+      <label for="state" class="input-half">
+        State
+        <input type="text" name="state" required />
+      </label>
+      <label for="zip" class="input-full">
+        ZIP Code
+        <input type="text" name="zip" required />
+      </label>
+    </form>
+    <button onclick="validateForm()" id="proceed-btn">
+      Proceed to PayPal Purchase
+    </button>
+
+    <div id="paypal-button-container"></div>
+
+    <!-- <h2>Attention!</h2>
     <p class="info">
       Our current checkout system is currently an unconventional one until we
       implement the payment system and e-commerce.
@@ -179,7 +232,7 @@
       Submit the form and Threedles will be in contact with you soon about your
       order. Happy stitching!
     </p>
-    <button id="copy-btn" onclick="handleCopyBtnClick()">Copy</button>
+    <button id="copy-btn" onclick="handleCopyBtnClick()">Copy</button> -->
 
     <!-- MailChimp Email Sign-Up -->
     <div id="mc_embed_shell">

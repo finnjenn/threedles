@@ -8,6 +8,43 @@ h1 {
   text-underline-offset: 1rem;
   padding-bottom: 1rem;
 }
+h2 {
+  font-family: "Italianno", cursive;
+  color: #420039;
+  font-size: 4em;
+  text-align: center;
+  text-decoration: underline 3px solid;
+  text-underline-offset: 1rem;
+  margin-bottom: 2rem;
+}
+.checkout-nav-btn {
+  position: absolute;
+  top: 0;
+  border: 1px solid #932f6d;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 0.5rem 0.75rem;
+  font-weight: 600;
+  transition: 200ms ease-in-out;
+}
+#back-btn {
+  left: 0;
+  color: #932f6d;
+  background-color: white;
+}
+#home-btn {
+  right: 0;
+  background-color: #932f6d;
+  color: white;
+}
+#back-btn:hover {
+  color: white;
+  background-color: #932f6d;
+}
+#home-btn:hover {
+  background-color: white;
+  color: #932f6d;
+}
 #checkout-container {
   width: 90%;
   margin: 0 auto;
@@ -57,35 +94,53 @@ h1 {
   margin-right: 3rem;
   color: #420039;
 }
-h2 {
-  text-align: center;
+form {
+  width: 45rem;
   color: #420039;
-}
-.info {
-  text-align: center;
-  color: #420039;
-  font-size: 1.2em;
-  margin: 0 10%;
-  text-wrap: balance;
+  font-weight: 600;
+  background-color: #f6f2ff;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
   margin-bottom: 1rem;
-  line-height: 2em;
 }
-#copy-btn {
+/* form label input,
+form label {
+  display: block;
+} */
+.input-half {
+  width: 49.5%;
+}
+.input-full {
+  width: 100%;
+}
+form input {
+  width: 100%;
+  margin: 0.5rem 0;
+  border: none;
+  border: 1px solid #932f6d;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+form input:focus {
+  outline: 1px solid #420039;
+}
+#proceed-btn {
   display: block;
   margin: 0 auto;
   background-color: #932f6d;
   color: white;
-  /* border: none; */
+  font-size: 1.3em;
+  font-weight: 600;
+  border: 1px solid #932f6d;
   border-radius: 0.5rem;
-  padding: 1rem 4rem;
-  font-size: 1.5em;
-  border: 2px solid #932f6d;
-  transition: 200ms ease-in-out;
-  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
 }
-#copy-btn:hover {
-  background-color: white;
-  color: #932f6d;
+#paypal-button-container {
+  width: 50%;
+  margin: 0 auto;
+  display: none;
 }
 @media (max-width: 768px) {
   .x-icon,
@@ -99,5 +154,11 @@ h2 {
   }
   .text-box p {
     font-size: 1em;
+  }
+  #paypal-button-container {
+    width: 90%;
+  }
+  form {
+    width: 90%;
   }
 }

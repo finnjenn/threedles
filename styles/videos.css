@@ -12,9 +12,9 @@ h1 {
   align-items: center;
 }
 .item-container {
-  /* border: 1px solid black; */
   text-align: center;
   margin-bottom: 2rem;
+  /* border: 1px solid red; */
 }
 .item-container p {
   font-family: "Italianno", cursive;
@@ -30,23 +30,22 @@ h1 {
 .btn-box {
   display: flex;
   justify-content: space-evenly;
-  /* border: 1px solid red; */
 }
 .download-btn {
   background-color: #932f6d;
   color: white;
   font-weight: bold;
-  /* border: none; */
   border-radius: 0.5rem;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   transition: 200ms ease-in-out;
   border: 3px solid #932f6d;
 }
 .youtube-btn {
   background-color: #e07be0;
-  /* border: none; */
+  color: white;
+  font-weight: bold;
   border-radius: 0.5rem;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   transition: 200ms ease-in-out;
   border: 3px solid #e07be0;
 }
@@ -56,7 +55,8 @@ h1 {
 }
 .youtube-btn:hover {
   background-color: white;
+  color: #e07be0;
 }
-.other-video iframe {
-  width: 22rem;
+.col {
+  text-align: center;
 }

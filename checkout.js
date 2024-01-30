@@ -1,3 +1,21 @@
+document.getElementById("back-btn").addEventListener("click", () => {
+  history.back();
+});
+
+function validateForm() {
+  let formElements = document.querySelectorAll("form label input");
+  let isValidForm = true;
+  formElements.forEach((item) => {
+    console.log(item.checkValidity());
+    if (item.checkValidity() === false) isValidForm = false;
+  });
+  if (isValidForm) {
+    let paypalContainer = document.querySelector("#paypal-button-container");
+    let proceedBtn = document.querySelector("#proceed-btn");
+    paypalContainer.style.display = "block";
+    proceedBtn.scrollIntoView();
+  } else alert("Please fill out all form fields before proceeding.");
+}
 function displayCheckout() {
   let currentCart = JSON.parse(sessionStorage.getItem("cartArray"));
   let checkoutContainer = document.querySelector("#checkout-container");
@@ -84,3 +102,34 @@ function handleCopyBtnClick() {
     });
 }
 displayCheckout();
+
+paypal
+  .Buttons({
+    style: {
+      layout: "vertical",
+      color: "blue",
+      shape: "rect",
+      label: "paypal",
+      disableMaxWidth: true,
+    },
+    createOrder: function (data, actions) {
+      // Set up the transaction details and return the order ID
+      return actions.order.create({
+        purchase_units: [
+          {
+            amount: {
+              value: document.querySelector("#checkout-total span").innerHTML,
+            },
+          },
+        ],
+      });
+    },
+    onApprove: function (data, actions) {
+      // Capture the funds when the user approves the payment
+      return actions.order.capture().then(function (details) {
+        // Handle the successful payment here
+        alert("Transaction completed by " + details.payer.name.given_name);
+      });
+    },
+  })
+  .render("#paypal-button-container");
