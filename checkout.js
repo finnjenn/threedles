@@ -54,7 +54,7 @@ function displayCheckout() {
     itemPrice.className = "checkout-item-price";
     textBox2.appendChild(itemPrice);
     checkoutItem.appendChild(textBox2);
-    checkoutContainer.appendChild(checkoutItem);
+    checkoutContainer.prepend(checkoutItem);
   }
   document.querySelector("#checkout-total span").innerHTML = cartTotal;
 }

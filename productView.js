@@ -2,12 +2,17 @@ function updateColorText(color) {
   let colorText = document.getElementById("color-text");
   colorText.innerHTML = color;
 }
-function changeImage(src) {
+function changeSelected(src, color) {
+  let selectOptions = document.querySelectorAll("#color option");
+  console.log(selectOptions);
+  selectOptions.forEach((option) => {
+    if (option.innerHTML === color) option.selected = true;
+  });
   let imageElement = document.getElementById("product-img");
   imageElement.src = src;
 }
 function changeColorwayFromSelect(index, srcArray, colorArray) {
-  changeImage(srcArray[index]);
+  changeSelected(srcArray[index]);
   updateColorText(colorArray[index]);
 }
 

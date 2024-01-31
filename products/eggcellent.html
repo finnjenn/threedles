@@ -143,19 +143,19 @@
             class="product-color"
             style="background-color: rgb(186, 157, 78)"
             onmouseenter="updateColorText(`Gold Egg`)"
-            onclick="changeImage('../assets/designs/Eggcellent_Gold.png')"
+            onclick="changeSelected('../assets/designs/Eggcellent_Gold.png', 'Gold Egg')"
           ></div>
           <div
             class="product-color"
             style="background-color: rgb(249, 145, 237)"
             onmouseenter="updateColorText(`Easter Egg`)"
-            onclick="changeImage('../assets/designs/Eggcellent_Easter.png')"
+            onclick="changeSelected('../assets/designs/Eggcellent_Easter.png', 'Easter Egg')"
           ></div>
           <div
             class="product-color"
             style="background-color: rgb(25, 62, 25)"
             onmouseenter="updateColorText(`Christmas Egg`)"
-            onclick="changeImage('../assets/designs/Eggcellent_Christmas.png')"
+            onclick="changeSelected('../assets/designs/Eggcellent_Christmas.png', 'Christmas Egg')"
           ></div>
         </div>
         <p id="color-text">Gold Egg</p>
@@ -173,9 +173,9 @@
             id="color"
             onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/Eggcellent_Gold.png', '../assets/designs/Eggcellent_Easter.png', '../assets/designs/Eggcellent_Christmas.png'], ['Gold Egg', 'Easter Egg', 'Christmas Egg'])"
           >
-            <option value="Gold">Gold</option>
-            <option value="Easter">Easter</option>
-            <option value="Christmas">Christmas</option>
+            <option value="Gold Egg">Gold Egg</option>
+            <option value="Easter Egg">Easter Egg</option>
+            <option value="Christmas Egg">Christmas Egg</option>
           </select>
           <button>Add To Cart</button>
         </form>
