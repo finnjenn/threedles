@@ -165,18 +165,26 @@
         <p id="product-size">L: 5.5" x 3.75" | S: 2" x 2.75"</p>
         <p id="product-pricing">Chart | <span>$32</span></p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="32">Chart</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/Eggcellent_Gold.png', '../assets/designs/Eggcellent_Easter.png', '../assets/designs/Eggcellent_Christmas.png'], ['Gold Egg', 'Easter Egg', 'Christmas Egg'])"
-          >
-            <option value="Gold Egg">Gold Egg</option>
-            <option value="Easter Egg">Easter Egg</option>
-            <option value="Christmas Egg">Christmas Egg</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="32">Chart</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/Eggcellent_Gold.png', '../assets/designs/Eggcellent_Easter.png', '../assets/designs/Eggcellent_Christmas.png'], ['Gold Egg', 'Easter Egg', 'Christmas Egg'])"
+              >
+                <option value="Gold Egg">Gold Egg</option>
+                <option value="Easter Egg">Easter Egg</option>
+                <option value="Christmas Egg">Christmas Egg</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

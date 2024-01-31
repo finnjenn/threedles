@@ -171,19 +171,27 @@
         <p id="product-size">6.5" x 6.5"</p>
         <p id="product-pricing">Chart | <span>$28</span></p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="28">Chart</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/SeasonalRays_Summer.png', '../assets/designs/SeasonalRays_Fall.png', '../assets/designs/SeasonalRays_Winter.png', '../assets/designs/SeasonalRays_Spring.png'], ['Summer', 'Fall', 'Winter', 'Spring'])"
-          >
-            <option value="Summmer">Summmer</option>
-            <option value="Fall">Fall</option>
-            <option value="Winter">Winter</option>
-            <option value="Spring">Spring</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="28">Chart</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/SeasonalRays_Summer.png', '../assets/designs/SeasonalRays_Fall.png', '../assets/designs/SeasonalRays_Winter.png', '../assets/designs/SeasonalRays_Spring.png'], ['Summer', 'Fall', 'Winter', 'Spring'])"
+              >
+                <option value="Summmer">Summmer</option>
+                <option value="Fall">Fall</option>
+                <option value="Winter">Winter</option>
+                <option value="Spring">Spring</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

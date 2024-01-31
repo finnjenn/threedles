@@ -168,20 +168,28 @@
           <span>$80</span>
         </p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="44">Chart</option>
-            <option value="48">Crystal Pack</option>
-            <option value="80">Combo</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/DiamondEyes_Dazzle.png', '../assets/designs/DiamondEyes_Allure.png', '../assets/designs/DiamondEyes_Intrigue.png'], ['Dazzle', 'Allure', 'Intrigue'])"
-          >
-            <option value="Dazzle">Dazzle</option>
-            <option value="Allure">Allure</option>
-            <option value="Intrigue">Intrigue</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="44">Chart</option>
+                <option value="48">Crystal Pack</option>
+                <option value="80">Combo</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/DiamondEyes_Dazzle.png', '../assets/designs/DiamondEyes_Allure.png', '../assets/designs/DiamondEyes_Intrigue.png'], ['Dazzle', 'Allure', 'Intrigue'])"
+              >
+                <option value="Dazzle">Dazzle</option>
+                <option value="Allure">Allure</option>
+                <option value="Intrigue">Intrigue</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

@@ -165,18 +165,26 @@
         <p id="product-size">3" x 3"</p>
         <p id="product-pricing">Chart | <span>$24</span></p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="24">Chart</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/QED2_Chagall.png', '../assets/designs/QED2_VanGogh.png', '../assets/designs/QED2_Kandinsky.png'], ['Chagall', 'Van Gogh', 'Kandinsky'])"
-          >
-            <option value="Chagall">Chagall</option>
-            <option value="Van Gogh">Van Gogh</option>
-            <option value="Kandinsky">Kandinsky</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="24">Chart</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/QED2_Chagall.png', '../assets/designs/QED2_VanGogh.png', '../assets/designs/QED2_Kandinsky.png'], ['Chagall', 'Van Gogh', 'Kandinsky'])"
+              >
+                <option value="Chagall">Chagall</option>
+                <option value="Van Gogh">Van Gogh</option>
+                <option value="Kandinsky">Kandinsky</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

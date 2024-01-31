@@ -174,21 +174,29 @@
           <span>$95</span>
         </p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="60">Chart</option>
-            <option value="50">Crystal Pack</option>
-            <option value="95">Combo</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/AllThatGlitters_TealTreasures.png', '../assets/designs/AllThatGlitters_GoldFrost.png', '../assets/designs/AllThatGlitters_PolarIce.png', '../assets/designs/AllThatGlitters_VeryChristmas.png'], ['Teal Treasures', 'Gold Frost', 'Polar Ice', 'Very Christmas'])"
-          >
-            <option value="Teal Treasures">Teal Treasures</option>
-            <option value="Gold Frost">Gold Frost</option>
-            <option value="Polar Ice">Polar Ice</option>
-            <option value="Very Christmas">Very Christmas</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="60">Chart</option>
+                <option value="50">Crystal Pack</option>
+                <option value="95">Combo</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/AllThatGlitters_TealTreasures.png', '../assets/designs/AllThatGlitters_GoldFrost.png', '../assets/designs/AllThatGlitters_PolarIce.png', '../assets/designs/AllThatGlitters_VeryChristmas.png'], ['Teal Treasures', 'Gold Frost', 'Polar Ice', 'Very Christmas'])"
+              >
+                <option value="Teal Treasures">Teal Treasures</option>
+                <option value="Gold Frost">Gold Frost</option>
+                <option value="Polar Ice">Polar Ice</option>
+                <option value="Very Christmas">Very Christmas</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

@@ -165,18 +165,26 @@
         <p id="product-size">8" x 8"</p>
         <p id="product-pricing">Chart | <span>$28</span></p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="28">Chart</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/FourFriends_Festival.png', '../assets/designs/FourFriends_Tangiers.png', '../assets/designs/FourFriends_BellFlower.png'], ['Festival', 'Tangiers', 'Bell Flower'])"
-          >
-            <option value="Festival">Festival</option>
-            <option value="Tangiers">Tangiers</option>
-            <option value="Bell Flower">Bell Flower</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="28">Chart</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/FourFriends_Festival.png', '../assets/designs/FourFriends_Tangiers.png', '../assets/designs/FourFriends_BellFlower.png'], ['Festival', 'Tangiers', 'Bell Flower'])"
+              >
+                <option value="Festival">Festival</option>
+                <option value="Tangiers">Tangiers</option>
+                <option value="Bell Flower">Bell Flower</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

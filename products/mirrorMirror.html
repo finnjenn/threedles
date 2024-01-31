@@ -174,21 +174,29 @@
           <span>$46</span>
         </p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="28">Chart</option>
-            <option value="28">Crystal Pack</option>
-            <option value="46">Combo</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/Mirror_CarribbeanSeas.png', '../assets/designs/Mirror_Carousel.png', '../assets/designs/Mirror_Embers.png', '../assets/designs/Mirror_VictorianJewel.png'], ['Caribbean Seas', 'Carousel', 'Embers', 'Victorian Jewel'])"
-          >
-            <option value="Caribbean Seas">Caribbean Seas</option>
-            <option value="Carousel">Carousel</option>
-            <option value="Embers">Embers</option>
-            <option value="Victorian Jewel">Victorian Jewel</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="28">Chart</option>
+                <option value="28">Crystal Pack</option>
+                <option value="46">Combo</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/Mirror_CarribbeanSeas.png', '../assets/designs/Mirror_Carousel.png', '../assets/designs/Mirror_Embers.png', '../assets/designs/Mirror_VictorianJewel.png'], ['Caribbean Seas', 'Carousel', 'Embers', 'Victorian Jewel'])"
+              >
+                <option value="Caribbean Seas">Caribbean Seas</option>
+                <option value="Carousel">Carousel</option>
+                <option value="Embers">Embers</option>
+                <option value="Victorian Jewel">Victorian Jewel</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

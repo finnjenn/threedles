@@ -151,12 +151,20 @@
         <p id="product-size">2.75" x 2.75"</p>
         <p id="product-pricing">Chart | <span>$20</span></p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="20">Chart</option>
-          </select>
-          <select name="color" id="color">
-            <option value="August">August</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="20">Chart</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select name="color" id="color">
+                <option value="August">August</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

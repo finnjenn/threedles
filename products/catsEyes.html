@@ -168,20 +168,28 @@
           <span>$88</span>
         </p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="48">Chart</option>
-            <option value="48">Crystal Pack</option>
-            <option value="88">Combo</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/CatsEyes_CleopatrasEyes.png', '../assets/designs/CatsEyes_GaeasEyes.png', '../assets/designs/CatsEyes_VenusEyes.png'], [`Cleopatra's Eyes`, `Gaea's Eyes`, `Venus' Eyes`])"
-          >
-            <option value="Cleopatra's Eyes">Cleopatra's Eyes</option>
-            <option value="Gaea's Eyes">Gaea's Eyes</option>
-            <option value="Venus' Eyes">Venus' Eyes</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="48">Chart</option>
+                <option value="48">Crystal Pack</option>
+                <option value="88">Combo</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/CatsEyes_CleopatrasEyes.png', '../assets/designs/CatsEyes_GaeasEyes.png', '../assets/designs/CatsEyes_VenusEyes.png'], [`Cleopatra's Eyes`, `Gaea's Eyes`, `Venus' Eyes`])"
+              >
+                <option value="Cleopatra's Eyes">Cleopatra's Eyes</option>
+                <option value="Gaea's Eyes">Gaea's Eyes</option>
+                <option value="Venus' Eyes">Venus' Eyes</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

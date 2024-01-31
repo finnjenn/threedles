@@ -154,14 +154,22 @@
           <span>$35</span>
         </p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="20">Chart</option>
-            <option value="20">Crystal Pack</option>
-            <option value="35">Combo</option>
-          </select>
-          <select name="color" id="color">
-            <option value="April">April</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="20">Chart</option>
+                <option value="20">Crystal Pack</option>
+                <option value="35">Combo</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select name="color" id="color">
+                <option value="April">April</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

@@ -168,20 +168,28 @@
           <span>$60</span>
         </p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="32">Chart</option>
-            <option value="25">Crystal Pack</option>
-            <option value="60">Combo</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/Xmas2016_IceBlue.png', '../assets/designs/Xmas2016_SumptuousBronze.png', '../assets/designs/Xmas2016_TraditionalGold.png',], ['Ice Blue', 'Sumptuous Bronze', 'Traditional Gold'])"
-          >
-            <option value="Ice Blue">Ice Blue</option>
-            <option value="Sumptuous Bronze">Sumptuous Bronze</option>
-            <option value="Traditional Gold">Traditional Gold</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="32">Chart</option>
+                <option value="25">Crystal Pack</option>
+                <option value="60">Combo</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/Xmas2016_IceBlue.png', '../assets/designs/Xmas2016_SumptuousBronze.png', '../assets/designs/Xmas2016_TraditionalGold.png',], ['Ice Blue', 'Sumptuous Bronze', 'Traditional Gold'])"
+              >
+                <option value="Ice Blue">Ice Blue</option>
+                <option value="Sumptuous Bronze">Sumptuous Bronze</option>
+                <option value="Traditional Gold">Traditional Gold</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

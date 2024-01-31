@@ -165,18 +165,26 @@
         <p id="product-size">7" x 7"</p>
         <p id="product-pricing">Chart | <span>$28</span></p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="28">Chart</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/LogCabinFan_Andalusia.png', '../assets/designs/LogCabinFan_Marseille.png', '../assets/designs/LogCabinFan_Tuscany.png'], ['Andalusia', 'Marseille', 'Tuscany'])"
-          >
-            <option value="Andalusia">Andalusia</option>
-            <option value="Marseille">Marseille</option>
-            <option value="Tuscany">Tuscany</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="28">Chart</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/LogCabinFan_Andalusia.png', '../assets/designs/LogCabinFan_Marseille.png', '../assets/designs/LogCabinFan_Tuscany.png'], ['Andalusia', 'Marseille', 'Tuscany'])"
+              >
+                <option value="Andalusia">Andalusia</option>
+                <option value="Marseille">Marseille</option>
+                <option value="Tuscany">Tuscany</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

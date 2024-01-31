@@ -168,20 +168,28 @@
           <span>$40</span>
         </p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="28">Chart</option>
-            <option value="20">Crystal Pack</option>
-            <option value="40">Combo</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/OvalThree_WhiteSilver.png', '../assets/designs/OvalThree_RoseBlush.png', '../assets/designs/OvalThree_Lilac.png'], ['White-Silver', 'Rose Blush', 'Lilac'])"
-          >
-            <option value="White-Silver">White-Silver</option>
-            <option value="Rose Blush">Rose Blush</option>
-            <option value="Lilac">Lilac</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="28">Chart</option>
+                <option value="20">Crystal Pack</option>
+                <option value="40">Combo</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/OvalThree_WhiteSilver.png', '../assets/designs/OvalThree_RoseBlush.png', '../assets/designs/OvalThree_Lilac.png'], ['White-Silver', 'Rose Blush', 'Lilac'])"
+              >
+                <option value="White-Silver">White-Silver</option>
+                <option value="Rose Blush">Rose Blush</option>
+                <option value="Lilac">Lilac</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

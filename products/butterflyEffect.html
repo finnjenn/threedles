@@ -165,18 +165,26 @@
         <p id="product-size">16" x 8"</p>
         <p id="product-pricing">Chart | <span>$50</span></p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="50">Chart</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/ButterflyEffect_Midnight.jpeg', '../assets/designs/ButterflyEffect_Dusk.jpeg', '../assets/designs/ButterflyEffect_Dawn.jpeg'], ['Midnight', 'Dusk', 'Dawn'])"
-          >
-            <option value="Midnight">Midnight</option>
-            <option value="Dusk">Dusk</option>
-            <option value="Dawn">Dawn</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="50">Chart</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/ButterflyEffect_Midnight.jpeg', '../assets/designs/ButterflyEffect_Dusk.jpeg', '../assets/designs/ButterflyEffect_Dawn.jpeg'], ['Midnight', 'Dusk', 'Dawn'])"
+              >
+                <option value="Midnight">Midnight</option>
+                <option value="Dusk">Dusk</option>
+                <option value="Dawn">Dawn</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

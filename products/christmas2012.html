@@ -165,18 +165,26 @@
         <p id="product-size">2.25" x 2.25"</p>
         <p id="product-pricing">Chart | <span>$28</span></p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="28">Chart</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/Xmas2012_GoldOnSandstone.png', '../assets/designs/Xmas2012_WhiteOnRose.png', '../assets/designs/Xmas2012_BlueGreenOnWhite.png'], ['Gold on Sandstone', 'White on Rose', 'Blue-Green on White'])"
-          >
-            <option value="Gold on Sandstone">Gold on Sandstone</option>
-            <option value="White on Rose">White on Rose</option>
-            <option value="Blue-Green on White">Blue-Green on White</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="28">Chart</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/Xmas2012_GoldOnSandstone.png', '../assets/designs/Xmas2012_WhiteOnRose.png', '../assets/designs/Xmas2012_BlueGreenOnWhite.png'], ['Gold on Sandstone', 'White on Rose', 'Blue-Green on White'])"
+              >
+                <option value="Gold on Sandstone">Gold on Sandstone</option>
+                <option value="White on Rose">White on Rose</option>
+                <option value="Blue-Green on White">Blue-Green on White</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

@@ -165,18 +165,26 @@
         <p id="product-size">2.5" x 2.5"</p>
         <p id="product-pricing">Chart | <span>$32</span></p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="32">Chart</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/Xmas2018_Halloween.png', '../assets/designs/Xmas2018_Blue.png', '../assets/designs/Xmas2018_Red.png'], ['Halloween', 'Blue', 'Red'])"
-          >
-            <option value="Halloween">Halloween</option>
-            <option value="Blue">Blue</option>
-            <option value="Red">Red</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="32">Chart</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/Xmas2018_Halloween.png', '../assets/designs/Xmas2018_Blue.png', '../assets/designs/Xmas2018_Red.png'], ['Halloween', 'Blue', 'Red'])"
+              >
+                <option value="Halloween">Halloween</option>
+                <option value="Blue">Blue</option>
+                <option value="Red">Red</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

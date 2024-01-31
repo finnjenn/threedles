@@ -165,18 +165,26 @@
         <p id="product-size">2" x 3"</p>
         <p id="product-pricing">Chart | <span>$28</span></p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="28">Chart</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/Xmas2014_ApricotGrove.jpeg', '../assets/designs/Xmas2014_Gemstone.jpeg', '../assets/designs/Xmas2014_IndiaInk.jpeg'], ['Apricot Grove', 'Gemstone', 'India Ink'])"
-          >
-            <option value="Apricot Grove">Apricot Grove</option>
-            <option value="Gemstone">Gemstone</option>
-            <option value="India Ink">India Ink</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="28">Chart</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/Xmas2014_ApricotGrove.jpeg', '../assets/designs/Xmas2014_Gemstone.jpeg', '../assets/designs/Xmas2014_IndiaInk.jpeg'], ['Apricot Grove', 'Gemstone', 'India Ink'])"
+              >
+                <option value="Apricot Grove">Apricot Grove</option>
+                <option value="Gemstone">Gemstone</option>
+                <option value="India Ink">India Ink</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

@@ -165,18 +165,26 @@
         <p id="product-size">3.25" x 1"</p>
         <p id="product-pricing">Chart | <span>$36</span></p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="48">Chart</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/HolidayPoppers_Halloween.png', '../assets/designs/HolidayPoppers_Christmas.png', '../assets/designs/HolidayPoppers_4thOfJuly.png'], ['Halloween', 'Christmas', '4th Of July'])"
-          >
-            <option value="Halloween">Halloween</option>
-            <option value="Christmas">Christmas</option>
-            <option value="4th Of July">4th Of July</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="48">Chart</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/HolidayPoppers_Halloween.png', '../assets/designs/HolidayPoppers_Christmas.png', '../assets/designs/HolidayPoppers_4thOfJuly.png'], ['Halloween', 'Christmas', '4th Of July'])"
+              >
+                <option value="Halloween">Halloween</option>
+                <option value="Christmas">Christmas</option>
+                <option value="4th Of July">4th Of July</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

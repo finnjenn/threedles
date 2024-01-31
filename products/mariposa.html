@@ -168,20 +168,28 @@
           <span>$62</span>
         </p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="28">Chart</option>
-            <option value="24">Crystal Pack</option>
-            <option value="62">Combo</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/Mariposa_Black.png', '../assets/designs/Mariposa_ButterCream.png', '../assets/designs/Mariposa_Pastel.png'], ['Black', 'Butter Cream', 'Pastel'])"
-          >
-            <option value="Black">Black</option>
-            <option value="Butter Cream">Butter Cream</option>
-            <option value="Pastel">Pastel</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="28">Chart</option>
+                <option value="24">Crystal Pack</option>
+                <option value="62">Combo</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/Mariposa_Black.png', '../assets/designs/Mariposa_ButterCream.png', '../assets/designs/Mariposa_Pastel.png'], ['Black', 'Butter Cream', 'Pastel'])"
+              >
+                <option value="Black">Black</option>
+                <option value="Butter Cream">Butter Cream</option>
+                <option value="Pastel">Pastel</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

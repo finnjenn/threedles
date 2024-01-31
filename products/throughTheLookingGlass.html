@@ -162,19 +162,27 @@
           <span>$78</span>
         </p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="44">Chart</option>
-            <option value="45">Crystal Pack</option>
-            <option value="78">Combo</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/ThroughTheLookingGlass_Bronze.jpg', '../assets/designs/ThroughTheLookingGlass_Citrine.jpg'], ['Bronze', 'Citrine'])"
-          >
-            <option value="Bronze">Bronze</option>
-            <option value="Citrine">Citrine</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="44">Chart</option>
+                <option value="45">Crystal Pack</option>
+                <option value="78">Combo</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/ThroughTheLookingGlass_Bronze.jpg', '../assets/designs/ThroughTheLookingGlass_Citrine.jpg'], ['Bronze', 'Citrine'])"
+              >
+                <option value="Bronze">Bronze</option>
+                <option value="Citrine">Citrine</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

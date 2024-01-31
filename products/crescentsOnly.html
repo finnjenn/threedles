@@ -174,21 +174,29 @@
           <span>$40</span>
         </p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="28">Chart</option>
-            <option value="20">Crystal Pack</option>
-            <option value="40">Combo</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/CresentsOnly_ChristmasOrnament.png', '../assets/designs/CresentsOnly_ChiliPeppers.png', '../assets/designs/CresentsOnly_HarvestGrape.png', '../assets/designs/CresentsOnly_AntiqueSilk.png'], ['Christmas Ornament', 'Chili Peppers', 'Harvest Grape', 'Antique Silk'])"
-          >
-            <option value="Christmas Ornament">Christmas Ornament</option>
-            <option value="Chili Peppers">Chili Peppers</option>
-            <option value="Harvest Grape">Harvest Grape</option>
-            <option value="Antique Silk">Antique Silk</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="28">Chart</option>
+                <option value="20">Crystal Pack</option>
+                <option value="40">Combo</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/CresentsOnly_ChristmasOrnament.png', '../assets/designs/CresentsOnly_ChiliPeppers.png', '../assets/designs/CresentsOnly_HarvestGrape.png', '../assets/designs/CresentsOnly_AntiqueSilk.png'], ['Christmas Ornament', 'Chili Peppers', 'Harvest Grape', 'Antique Silk'])"
+              >
+                <option value="Christmas Ornament">Christmas Ornament</option>
+                <option value="Chili Peppers">Chili Peppers</option>
+                <option value="Harvest Grape">Harvest Grape</option>
+                <option value="Antique Silk">Antique Silk</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

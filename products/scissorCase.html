@@ -165,18 +165,26 @@
         <p id="product-size">Case: 4x5 | Fob: 2x2 | Needle Book: 3x3</p>
         <p id="product-pricing">Chart | <span>$28</span></p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="28">Chart</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/ScissorCase_ArnhemHeath.png', '../assets/designs/ScissorCase_FallenLeaves.png', '../assets/designs/ScissorCase_LaurasGarden.png'], ['Arnhem Heath', 'Fallen Leaves', `Laura's Garden`])"
-          >
-            <option value="Arnhem Heath">Arnhem Heath</option>
-            <option value="Fallen Leaves">Fallen Leaves</option>
-            <option value="Laura's Garden">Laura's Garden</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="28">Chart</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/ScissorCase_ArnhemHeath.png', '../assets/designs/ScissorCase_FallenLeaves.png', '../assets/designs/ScissorCase_LaurasGarden.png'], ['Arnhem Heath', 'Fallen Leaves', `Laura's Garden`])"
+              >
+                <option value="Arnhem Heath">Arnhem Heath</option>
+                <option value="Fallen Leaves">Fallen Leaves</option>
+                <option value="Laura's Garden">Laura's Garden</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

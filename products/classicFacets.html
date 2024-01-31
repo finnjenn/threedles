@@ -165,18 +165,26 @@
         <p id="product-size">4.5" x 8"</p>
         <p id="product-pricing">Chart | <span>$44</span></p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="44">Chart</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/ClassicFacets_Aquamarine.png', '../assets/designs/ClassicFacets_Amethyst.png', '../assets/designs/ClassicFacets_Amber.png'], ['Aquamarine', 'Amethyst', 'Amber'])"
-          >
-            <option value="Aquamarine">Aquamarine</option>
-            <option value="Amethyst">Amethyst</option>
-            <option value="Amber">Amber</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="44">Chart</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/ClassicFacets_Aquamarine.png', '../assets/designs/ClassicFacets_Amethyst.png', '../assets/designs/ClassicFacets_Amber.png'], ['Aquamarine', 'Amethyst', 'Amber'])"
+              >
+                <option value="Aquamarine">Aquamarine</option>
+                <option value="Amethyst">Amethyst</option>
+                <option value="Amber">Amber</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

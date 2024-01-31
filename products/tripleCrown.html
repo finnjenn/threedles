@@ -168,20 +168,28 @@
           <span>$78</span>
         </p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="48">Chart</option>
-            <option value="40">Crystal Pack</option>
-            <option value="78">Combo</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/TripleCrown_TheBelmont.png', '../assets/designs/TripleCrown_KentuckyDerby.png', '../assets/designs/TripleCrown_ThePreakness.png'], ['The Belmont', 'Kentucky Derby', 'The Preakness'])"
-          >
-            <option value="The Belmont">The Belmont</option>
-            <option value="Kentucky Derby">Kentucky Derby</option>
-            <option value="The Preakness">The Preakness</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="48">Chart</option>
+                <option value="40">Crystal Pack</option>
+                <option value="78">Combo</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/TripleCrown_TheBelmont.png', '../assets/designs/TripleCrown_KentuckyDerby.png', '../assets/designs/TripleCrown_ThePreakness.png'], ['The Belmont', 'Kentucky Derby', 'The Preakness'])"
+              >
+                <option value="The Belmont">The Belmont</option>
+                <option value="Kentucky Derby">Kentucky Derby</option>
+                <option value="The Preakness">The Preakness</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

@@ -168,20 +168,28 @@
           <span>$55</span>
         </p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="32">Chart</option>
-            <option value="32">Crystal Pack</option>
-            <option value="55">Combo</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/MerryBells_WeddingBells.png', '../assets/designs/MerryBells_ChristmasBells.png', '../assets/designs/MerryBells_VictorianBells.png'], ['Wedding Bells', 'Christmas Bells', 'Victorian Bells'])"
-          >
-            <option value="Wedding Bells">Wedding Bells</option>
-            <option value="Christmas Bells">Christmas Bells</option>
-            <option value="Victorian Bells">Victorian Bells</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="32">Chart</option>
+                <option value="32">Crystal Pack</option>
+                <option value="55">Combo</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/MerryBells_WeddingBells.png', '../assets/designs/MerryBells_ChristmasBells.png', '../assets/designs/MerryBells_VictorianBells.png'], ['Wedding Bells', 'Christmas Bells', 'Victorian Bells'])"
+              >
+                <option value="Wedding Bells">Wedding Bells</option>
+                <option value="Christmas Bells">Christmas Bells</option>
+                <option value="Victorian Bells">Victorian Bells</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>

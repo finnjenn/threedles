@@ -168,20 +168,28 @@
           <span>$78</span>
         </p>
         <form action="" id="product-form" onsubmit="return getItemInfo()">
-          <select name="item-type" id="item-type">
-            <option value="48">Chart</option>
-            <option value="40">Crystal Pack</option>
-            <option value="78">Combo</option>
-          </select>
-          <select
-            name="color"
-            id="color"
-            onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/TopsyTurvy_Kelp.png', '../assets/designs/TopsyTurvy_ApricotGrove.png', '../assets/designs/TopsyTurvy_MorningGlory.png'], ['Kelp', 'Apricot Grove', 'Morning Glory'])"
-          >
-            <option value="Kelp">Kelp</option>
-            <option value="Apricot Grove">Apricot Grove</option>
-            <option value="Morning Glory">Morning Glory</option>
-          </select>
+          <div id="select-container">
+            <label for="item-type"
+              >Product Type
+              <select name="item-type" id="item-type">
+                <option value="48">Chart</option>
+                <option value="40">Crystal Pack</option>
+                <option value="78">Combo</option>
+              </select>
+            </label>
+            <label for="color"
+              >Colorway
+              <select
+                name="color"
+                id="color"
+                onchange="changeColorwayFromSelect(this.selectedIndex, ['../assets/designs/TopsyTurvy_Kelp.png', '../assets/designs/TopsyTurvy_ApricotGrove.png', '../assets/designs/TopsyTurvy_MorningGlory.png'], ['Kelp', 'Apricot Grove', 'Morning Glory'])"
+              >
+                <option value="Kelp">Kelp</option>
+                <option value="Apricot Grove">Apricot Grove</option>
+                <option value="Morning Glory">Morning Glory</option>
+              </select>
+            </label>
+          </div>
           <button>Add To Cart</button>
         </form>
         <desc-header></desc-header>
