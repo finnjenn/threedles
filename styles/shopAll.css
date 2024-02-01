@@ -46,6 +46,8 @@ h2 {
 .product-container {
   color: #420039;
   text-align: center;
+  max-width: 20rem;
+  margin: 0 auto;
 }
 .product-img,
 .product-alt-img {
