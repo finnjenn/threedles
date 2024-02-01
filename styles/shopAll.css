@@ -63,7 +63,8 @@ h2 {
   font-family: "Italianno", cursive;
   font-size: 2em;
   margin-top: 1rem;
-  padding-top: 1rem;
+  margin-bottom: 0;
+  padding-top: 0.5rem;
   border-top: #420039 1px solid;
 }
 .product-price {
