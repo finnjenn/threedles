@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon Imports -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <!-- <link rel="manifest" href="/site.webmanifest" /> -->
+    <!-- End Favicon Imports -->
+    <!-- Google Font Imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carattere&family=Euphoria+Script&family=Italianno&family=Parisienne&family=Petit+Formal+Script&family=Rouge+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End Google Font Imports -->
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="styles/reset.css" />
+    <!-- Bootstrap Import -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- General Styles (Nav, Email, Contact) -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- Page Specific Styles -->
+    <link rel="stylesheet" href="styles/shopAll.css" />
+    <title>Threedles - Home</title>
+    <script src="components/contact.js"></script>
+    <!-- <script src="components/navbar.js"></script> -->
+    <script src="components/banner.js"></script>
+  </head>
+  <body>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-md background-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            id="navbar-logo"
+            src="assets/threedlesLogoTransparent.png"
+            alt="Threedles Logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown mx-1">
+              <a
+                class="nav-link active dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Shop
+              </a>
+              <ul class="dropdown-menu background-light">
+                <li>
+                  <a class="dropdown-item" href="shopAll.html">Shop All</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="holiday.html">Holiday</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="advanced.html"
+                    >Advanced Designs</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="beginner.html"
+                    >Beginner Friendly</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="3D.html">3D Pieces</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="videos.html">Videos</a>
+            </li>
+          </ul>
+          <a href="#contact">
+            <button id="nav-contact-btn" class="btn background-purple">
+              Contact
+            </button>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- End Bootstrap Navbar -->
+
+    <!-- Shipping Deal Banner -->
+    <banner-component></banner-component>
+
+    <h1>3D Pieces</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="product-container">
+            <a href="products/beads.html">
+              <img
+                class="product-img"
+                src="assets/designs/BeadsCubed_ChristmasElegance.png"
+                alt="Beads Cubed Design"
+              />
+            </a>
+            <a href="products/beads.html">
+              <img
+                class="product-alt-img"
+                src="assets/designs/BeadsCubed_WinterElegance.png"
+                alt="Beads Cubed Alternate Design"
+              />
+            </a>
+            <p class="design-name">Beads<sup>3</sup></p>
+            <p><span class="product-price">$36</span> | 3 Colorways</p>
+            <a href="products/beads.html"
+              ><button class="buy-now-btn">Buy Now</button></a
+            >
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-container">
+            <a href="products/christmas2011.html">
+              <img
+                class="product-img"
+                src="assets/designs/Xmas2011_White.jpg"
+                alt="Christmas 2011 Design"
+              />
+            </a>
+            <a href="products/christmas2011.html">
+              <img
+                class="product-alt-img"
+                src="assets/designs/Xmas2011_Black.jpg"
+                alt="Christmas 2011 Alternate Design"
+              />
+            </a>
+            <p class="design-name">Christmas 2011</p>
+            <p><span class="product-price">$28</span> | 3 Colorways</p>
+            <a href="products/christmas2011.html"
+              ><button class="buy-now-btn">Buy Now</button></a
+            >
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-container">
+            <a href="products/christmas2012.html">
+              <img
+                class="product-img"
+                src="assets/designs/Xmas2012_GoldOnSandstone.png"
+                alt="Christmas 2012 Design"
+              />
+            </a>
+            <a href="products/christmas2012.html">
+              <img
+                class="product-alt-img"
+                src="assets/designs/Xmas2012_BlueGreenOnWhite.png"
+                alt="Christmas 2012 Alternate Design"
+              />
+            </a>
+            <p class="design-name">Christmas 2012</p>
+            <p><span class="product-price">$28</span> | 3 Colorways</p>
+            <a href="products/christmas2012.html"
+              ><button class="buy-now-btn">Buy Now</button></a
+            >
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-container">
+            <a href="products/christmas2013.html">
+              <img
+                class="product-img"
+                src="assets/designs/Xmas2013_Red.png"
+                alt="Christmas 2013 Design"
+              />
+            </a>
+            <a href="products/christmas2013.html">
+              <img
+                class="product-alt-img"
+                src="assets/designs/Xmas2013_Blue.png"
+                alt="Christmas 2013 Design"
+              />
+            </a>
+            <p class="design-name">Christmas 2013</p>
+            <p><span class="product-price">$28</span> | 3 Colorways</p>
+            <a href="products/christmas2013.html"
+              ><button class="buy-now-btn">Buy Now</button></a
+            >
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-container">
+            <a href="products/christmas2014.html">
+              <img
+                class="product-img"
+                src="assets/designs/Xmas2014_ApricotGrove.jpeg"
+                alt="Christmas 2014 Design"
+              />
+            </a>
+            <a href="products/christmas2014.html">
+              <img
+                class="product-alt-img"
+                src="assets/designs/Xmas2014_IndiaInk.jpeg"
+                alt="Christmas 2014 Alternate Design"
+              />
+            </a>
+            <p class="design-name">Christmas 2014</p>
+            <p><span class="product-price">$28</span> | 3 Colorways</p>
+            <a href="products/christmas2014.html"
+              ><button class="buy-now-btn">Buy Now</button></a
+            >
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-container">
+            <a href="products/christmas2019.html">
+              <img
+                class="product-img"
+                src="assets/designs/Xmas2019_Green.png"
+                alt="Christmas 2019 Design"
+              />
+            </a>
+            <a href="products/christmas2019.html">
+              <img
+                class="product-alt-img"
+                src="assets/designs/Xmas2019_Blue.png"
+                alt="Christmas 2019 Design"
+              />
+            </a>
+            <p class="design-name">Christmas 2019</p>
+            <p><span class="product-price">$36</span> | 3 Colorways</p>
+            <a href="products/christmas2019.html"
+              ><button class="buy-now-btn">Buy Now</button></a
+            >
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-container">
+            <a href="products/christmas2020.html">
+              <img
+                class="product-img"
+                src="assets/designs/Xmas2020_TisTheSeason.png"
+                alt="Christmas 2020 Design"
+              />
+            </a>
+            <a href="products/christmas2020.html">
+              <img
+                class="product-alt-img"
+                src="assets/designs/Xmas2020_WinterSnowfall.png"
+                alt="Christmas 2020 Alternate Design"
+              />
+            </a>
+            <p class="design-name">Christmas 2020</p>
+            <p><span class="product-price">$36</span> | 3 Colorways</p>
+            <a href="products/christmas2020.html"
+              ><button class="buy-now-btn">Buy Now</button></a
+            >
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-container">
+            <a href="products/holidayPoppers.html">
+              <img
+                class="product-img"
+                src="assets/designs/HolidayPoppers_Halloween.png"
+                alt="Holiday Poppers Design"
+              />
+            </a>
+            <a href="products/holidayPoppers.html">
+              <img
+                class="product-alt-img"
+                src="assets/designs/HolidayPoppers_4thofJuly.png"
+                alt="Holiday Poppers Alternate Design"
+              />
+            </a>
+            <p class="design-name">Holiday Poppers</p>
+            <p><span class="product-price">$36</span> | 3 Colorways</p>
+            <a href="products/holidayPoppers.html"
+              ><button class="buy-now-btn">Buy Now</button></a
+            >
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-container">
+            <a href="products/scissorCase.html">
+              <img
+                class="product-img"
+                src="assets/designs/ScissorCase_ArnhemHeath.png"
+                alt="Scissor Case Design"
+              />
+            </a>
+            <a href="products/scissorCase.html">
+              <img
+                class="product-alt-img"
+                src="assets/designs/ScissorCase_LaurasGarden.png"
+                alt="Scissor Case Alternate Design"
+              />
+            </a>
+            <p class="design-name">Scissor Case</p>
+            <p><span class="product-price">$28</span> | 3 Colorways</p>
+            <a href="products/scissorCase.html"
+              ><button class="buy-now-btn">Buy Now</button></a
+            >
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-container">
+            <a href="products/12MoC_February.html">
+              <img
+                class="product-img"
+                src="assets/designs/12MoC_February.jpg"
+                alt="12 Months of Christmas - February Design"
+              />
+            </a>
+            <a href="products/12MoC_February.html">
+              <img
+                class="product-alt-img"
+                src="assets/designs/12MoC_February.jpg"
+                alt="12 Months of Christmas - February Design"
+              />
+            </a>
+            <p class="design-name">February</p>
+            <p><span class="product-price">$20</span> | 1 Colorway</p>
+            <a href="products/12MoC_February.html"
+              ><button class="buy-now-btn">Buy Now</button></a
+            >
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-container">
+            <a href="products/12MoC_April.html">
+              <img
+                class="product-img"
+                src="assets/designs/12MoC_April.jpg"
+                alt="12 Months of Christmas - April Design"
+              />
+            </a>
+            <a href="products/12MoC_April.html">
+              <img
+                class="product-alt-img"
+                src="assets/designs/12MoC_April.jpg"
+                alt="12 Months of Christmas - April Design"
+              />
+            </a>
+            <p class="design-name">April</p>
+            <p><span class="product-price">$20</span> | 1 Colorway</p>
+            <a href="products/12MoC_April.html"
+              ><button class="buy-now-btn">Buy Now</button></a
+            >
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-container">
+            <a href="products/12MoC_June.html">
+              <img
+                class="product-img"
+                src="assets/designs/12MoC_June.jpg"
+                alt="12 Months of Christmas - June Design"
+              />
+            </a>
+            <a href="products/12MoC_June.html">
+              <img
+                class="product-alt-img"
+                src="assets/designs/12MoC_June.jpg"
+                alt="12 Months of Christmas - June Design"
+              />
+            </a>
+            <p class="design-name">June</p>
+            <p><span class="product-price">$20</span> | 1 Colorway</p>
+            <a href="products/12MoC_June.html"
+              ><button class="buy-now-btn">Buy Now</button></a
+            >
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-container">
+            <a href="products/12MoC_August.html">
+              <img
+                class="product-img"
+                src="assets/designs/12MoC_August.jpg"
+                alt="12 Months of Christmas - August Design"
+              />
+            </a>
+            <a href="products/12MoC_August.html">
+              <img
+                class="product-alt-img"
+                src="assets/designs/12MoC_August.jpg"
+                alt="12 Months of Christmas - August Design"
+              />
+            </a>
+            <p class="design-name">August</p>
+            <p><span class="product-price">$20</span> | 1 Colorway</p>
+            <a href="products/12MoC_August.html"
+              ><button class="buy-now-btn">Buy Now</button></a
+            >
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-container">
+            <a href="products/12MoC_October.html">
+              <img
+                class="product-img"
+                src="assets/designs/12MoC_October.JPG"
+                alt="12 Months of Christmas - October Design"
+              />
+            </a>
+            <a href="products/12MoC_October.html">
+              <img
+                class="product-alt-img"
+                src="assets/designs/12MoC_October.JPG"
+                alt="12 Months of Christmas - October Design"
+              />
+            </a>
+            <p class="design-name">October</p>
+            <p><span class="product-price">$20</span> | 1 Colorway</p>
+            <a href="products/12MoC_October.html"
+              ><button class="buy-now-btn">Buy Now</button></a
+            >
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-container">
+            <a href="products/12MoC_December.html">
+              <img
+                class="product-img"
+                src="assets/designs/12MoC_December.jpg"
+                alt="12 Months of Christmas - December Design"
+              />
+            </a>
+            <a href="products/12MoC_December.html">
+              <img
+                class="product-alt-img"
+                src="assets/designs/12MoC_December.jpg"
+                alt="12 Months of Christmas - December Design"
+              />
+            </a>
+            <p class="design-name">December</p>
+            <p><span class="product-price">$25</span> | 1 Colorway</p>
+            <a href="products/12MoC_December.html"
+              ><button class="buy-now-btn">Buy Now</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <contact-component id="contact"></contact-component>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+    <script src="shop.js"></script>
+  </body>
+</html>

@@ -43,11 +43,16 @@ h2 {
   flex-wrap: wrap;
   margin-bottom: 2rem;
 }
+.product-container {
+  color: #420039;
+  text-align: center;
+}
 .product-img,
 .product-alt-img {
   width: 15rem;
   height: 20rem;
   object-fit: contain;
+  margin: 0 auto;
 }
 .product-alt-img {
   display: none;
