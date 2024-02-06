@@ -87,4 +87,35 @@ function displayCart() {
     totalElement.innerHTML = `Total: $${total}`;
   }
 }
-console.log(JSON.parse(sessionStorage.getItem("cartArray")));
+const navcomp = document.querySelector("#navcomp");
+const navLinks = navcomp.shadowRoot.querySelectorAll(
+  ".nav-link, .dropdown-link, #logo-link"
+);
+const navImgs = navcomp.shadowRoot.querySelectorAll(
+  "#nav-logo, #dropdown-img, #cart-icon"
+);
+if (navcomp.getAttribute("isProductPage") === "true") {
+  navLinks.forEach((link) => {
+    let currentLink = link.getAttribute("href");
+    link.setAttribute("href", `../${currentLink}`);
+  });
+  navImgs.forEach((img) => {
+    console.log(img);
+    let currentImg = img.getAttribute("src");
+    img.setAttribute("src", `../${currentImg}`);
+  });
+}
+const primaryNav = navcomp.shadowRoot.querySelector("#primary-nav");
+const navToggle = navcomp.shadowRoot.querySelector("#nav-toggle");
+navToggle.addEventListener("click", () => {
+  console.log("nav toggle clicked");
+  const isNavVisible = primaryNav.getAttribute("data-mobile-nav-visible");
+  if (isNavVisible === "false") {
+    primaryNav.setAttribute("data-mobile-nav-visible", "true");
+    navToggle.setAttribute("aria-expanded", "true");
+  } else {
+    primaryNav.setAttribute("data-mobile-nav-visible", "false");
+    navToggle.setAttribute("aria-expanded", "false");
+  }
+});
+console.log("Cart", JSON.parse(sessionStorage.getItem("cartArray")));

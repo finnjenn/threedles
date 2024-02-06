@@ -6,7 +6,6 @@ h1 {
   margin-top: 1rem;
   text-decoration: underline 3px solid;
   text-underline-offset: 1rem;
-  padding-bottom: 1rem;
 }
 h2 {
   font-family: "Italianno", cursive;
@@ -23,9 +22,9 @@ h2 {
   font-family: "Italianno", cursive;
   font-size: 2em;
   text-underline-offset: 0.5rem;
-  padding: 0.5rem 0;
+  padding: 0.25rem 0;
   position: sticky;
-  top: 5.2rem;
+  top: 5rem;
 }
 #shop-nav a {
   color: #420039;

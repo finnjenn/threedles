@@ -48,83 +48,10 @@
     <script src="../components/contact.js"></script>
     <script src="../components/banner.js"></script>
     <script src="../components/descHeader.js"></script>
+    <script src="../components/navbar.js"></script>
   </head>
   <body>
-    <!-- Bootstrap Navbar -->
-    <nav class="navbar navbar-expand-md background-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html"
-          ><img
-            id="navbar-logo"
-            src="../assets/threedlesLogoTransparent.png"
-            alt="Threedles Logo"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../about.html">About</a>
-            </li>
-            <li class="nav-item dropdown mx-1">
-              <a
-                class="nav-link active dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Shop
-              </a>
-              <ul class="dropdown-menu background-light">
-                <li>
-                  <a class="dropdown-item" href="../shopAll.html">Shop All</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="../holiday.html">Holiday</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="../advanced.html"
-                    >Advanced Designs</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="../beginner.html"
-                    >Beginner Friendly</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../faq.html">FAQs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../videos.html">Videos</a>
-            </li>
-          </ul>
-          <a href="#contact">
-            <button id="nav-contact-btn" class="btn background-purple">
-              Contact
-            </button>
-          </a>
-        </div>
-      </div>
-    </nav>
-    <!-- End Bootstrap Navbar -->
+    <navbar-component id="navcomp" isProductPage="true"></navbar-component>
 
     <!-- Shipping Deal Banner -->
     <banner-component></banner-component>
@@ -302,46 +229,6 @@
     <!-- Contact Section -->
     <contact-component id="contact"></contact-component>
     <!-- End Contact Section -->
-
-    <!-- Cart button and cart offcanvas -->
-    <button
-      id="cart-btn"
-      class="btn background-lavender"
-      type="button"
-      data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasCart"
-      aria-controls="offcanvasCart"
-      onclick="displayCart()"
-    >
-      <img id="cart-icon" src="../assets/cart-line-icon.png" alt="Cart Icon" />
-    </button>
-    <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
-      id="offcanvasCart"
-      aria-labelledby="offcanvasCartLabel"
-    >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasCartLabel">Your Cart</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <div id="cart-container"></div>
-        <p id="cart-total">Total: $0</p>
-        <a href="../checkout.html">
-          <button id="checkout">Checkout</button>
-        </a>
-        <a href="../checkout.html" id="view-cart">
-          <button>View Cart</button>
-        </a>
-      </div>
-    </div>
-    <!-- End cart button and cart offcanvas -->
 
     <!-- Toast -->
     <div class="toast-container position-fixed bottom-0 end-0 p-3">

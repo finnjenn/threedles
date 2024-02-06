@@ -19,12 +19,12 @@
 #navbar-logo {
   width: 8rem;
 }
-.dropdown-item {
+/* .dropdown-item {
   transition: 100ms ease-in-out;
 }
 .dropdown-item:hover {
   text-decoration: underline;
-}
+} */
 #nav-contact-btn {
   border: 2px solid #932f6d;
   color: white;

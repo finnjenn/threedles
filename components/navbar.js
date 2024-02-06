@@ -1,65 +1,81 @@
 const navbarTemplate = document.createElement("template");
 navbarTemplate.innerHTML = `
-<style>
-  @import url('styles/reset.css');
-  @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css');
-  @import url('styles/styles.css');
-  
-  /* Add any additional styles specific to your navbar here */
-</style>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/nav.css" />
+  <link rel="stylesheet" href="../styles/reset.css" />
+  <link rel="stylesheet" href="../styles/nav.css" />
+  <style>
+    nav,
+    #dropdown {
+      z-index: 9999;
+    }
+    #nav-toggle {
+      z-index: 10000;
+    }
+  </style>
+
+  <nav>
+  <button id="nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+  </button>
+  <a href="index.html" id="logo-link">
+        <img
+          id="nav-logo"
+          src="assets/threedlesLogoTransparent.png"
+          alt="Threedles Logo"
+        />
+      </a>
+      <ul id="primary-nav" data-mobile-nav-visible="false">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li id="shop-item">
+          <span class="nav-link"
+            >Shop
+            <img
+              id="dropdown-img"
+              src="assets/dropdown.webp"
+              alt="Dropdown Arrow Icon"
+          /></span>
+          <ul id="dropdown">
+            <li class="dropdown-item">
+              <a class="dropdown-link" href="shopAll.html">Shop All</a>
+            </li>
+            <li class="dropdown-item">
+              <a class="dropdown-link" href="holiday.html">Holiday</a>
+            </li>
+            <li class="dropdown-item">
+              <a class="dropdown-link" href="beginner.html"
+                >Beginner Friendly</a
+              >
+            </li>
+            <li class="dropdown-item">
+              <a class="dropdown-link" href="advanced.html">Advanced Designs</a>
+            </li>
+            <li class="dropdown-item">
+              <a class="dropdown-link" href="3D.html">3D Pieces</a>
+            </li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        <li><a class="nav-link" href="faq.html">FAQs</a></li>
+        <li><a class="nav-link" href="videos.html">Videos</a></li>
+        <li id="cart-item">
+          <span class="sr-only">Cart</span>
+          <a href="checkout.html" class="nav-link">
+            <button id="cart-btn">
+              <img
+                src="assets/cart-line-icon.png"
+                alt="Cart Icon"
+                id="cart-icon"
+              />
+            </button>
+          </a>
+        </li>
+        <li>
+          <a href="#contact"><button id="contact-btn">Contact</button></a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    // Manually initialize Bootstrap navbar
-    new bootstrap.Navbar(document.querySelector('.navbar'));
-
-    // Manually initialize Bootstrap dropdown
-    var dropdownToggle = document.querySelector('.dropdown-toggle');
-    new bootstrap.Dropdown(dropdownToggle);
-  });
-</script>
+    </nav>
     `;
-
 class Navbar extends HTMLElement {
   constructor() {
     super();
