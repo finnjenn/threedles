@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon Imports -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <!-- <link rel="manifest" href="/site.webmanifest" /> -->
+    <!-- End Favicon Imports -->
+    <!-- Google Font Imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carattere&family=Euphoria+Script&family=Italianno&family=Parisienne&family=Petit+Formal+Script&family=Rouge+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End Google Font Imports -->
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="styles/reset.css" />
+    <!-- Bootstrap Import -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- General Styles (Nav, Email, Contact) -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- Page Specific Styles -->
+    <link rel="stylesheet" href="styles/signUp.css" />
+    <title>Threedles - Home</title>
+    <!-- Reusable Components -->
+    <script src="components/contactSignUp.js"></script>
+    <script src="components/navbar.js"></script>
+  </head>
+  <body>
+    <navbar-component id="navcomp" isProductPage="false"></navbar-component>
+    <h1>Sign Up for Threedles News, Tips and More!</h1>
+    <form
+      id="sign-up-form"
+      action="https://formspree.io/f/mrgnpnyv"
+      method="POST"
+    >
+      <label
+        >First Name
+        <input type="text" name="firstname" required />
+      </label>
+      <label
+        >Last Name
+        <input type="text" name="lastname" />
+      </label>
+      <label
+        >Email Address
+        <input type="email" name="email" required />
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Contact and Sign Up Section -->
+    <!-- <contact-sign-up-component id="contact"></contact-sign-up-component> -->
+    <!-- End Contact and Sign Up Section -->
+  </body>
+</html>
