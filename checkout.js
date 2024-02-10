@@ -1,7 +1,3 @@
-document.getElementById("back-btn").addEventListener("click", () => {
-  history.back();
-});
-
 function validateForm() {
   let formElements = document.querySelectorAll("form label input");
   let isValidForm = true;
@@ -75,31 +71,6 @@ function clearCart() {
   checkoutSection.prepend(newCheckoutContainer);
   let totalElement = document.querySelector("#checkout-total");
   totalElement.innerHTML = "Total : $<span>0</span>";
-}
-function handleCopyBtnClick() {
-  if (
-    !sessionStorage.getItem("cartArray") ||
-    sessionStorage.getItem("cartArray").length === 0
-  ) {
-    console.log("Cart Empty");
-  }
-  let currentCart = JSON.parse(sessionStorage.getItem("cartArray"));
-  let cartList = "";
-  for (let i = 0; i < currentCart.length; i++) {
-    cartList += `${currentCart[i].design} - ${currentCart[i].color} | ${currentCart[i].itemType} - $${currentCart[i].price}`;
-    cartList += "\n";
-  }
-  let total = document.querySelector("#checkout-total span").innerHTML;
-  cartList += `Total : $${total}`;
-  navigator.clipboard
-    .writeText(cartList)
-    .then(() => {
-      window.location.href =
-        "https://docs.google.com/forms/d/e/1FAIpQLSczpdz9PEAFsEMa2UKrR1_K5LtD8pcmjpY-7VWOlpzdD9YLCw/viewform?usp=sf_link";
-    })
-    .catch((err) => {
-      console.error("Unable to copy to clipboard.", err);
-    });
 }
 displayCheckout();
 

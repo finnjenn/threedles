@@ -1,39 +1,3 @@
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  /* transform: translateY(-5rem); */
-  /* transition: 1500ms ease-in-out; */
-  font-size: 1.2em;
-}
-.navbar.show {
-  transform: translate(0);
-}
-.nav-item {
-  border-bottom: 2px solid #f6f2ff;
-  transition: 200ms ease-in-out;
-}
-.nav-item:hover {
-  border-bottom: 2px solid black;
-}
-#navbar-logo {
-  width: 8rem;
-}
-/* .dropdown-item {
-  transition: 100ms ease-in-out;
-}
-.dropdown-item:hover {
-  text-decoration: underline;
-} */
-#nav-contact-btn {
-  border: 2px solid #932f6d;
-  color: white;
-  transition: 200ms ease-in-out;
-  font-size: 1.03em;
-}
-#nav-contact-btn:hover {
-  color: #932f6d;
-}
 .banner {
   background-color: #932f6d;
   color: white;
@@ -124,73 +88,6 @@ input.button:hover {
   border: 2px solid #f6f2ff;
   transform: translateY(2px);
 }
-.offcanvas {
-  background-color: #f6f2ff;
-  text-align: center;
-}
-#cart-btn {
-  position: fixed;
-  top: 50vh;
-  right: 0;
-  /* border: 1px solid red; */
-  border: 3px solid #dcccff;
-}
-#cart-icon {
-  width: 2.5rem;
-  position: sticky;
-}
-.cart-item {
-  padding: 1rem 0.5rem;
-}
-.cart-info-box {
-  display: flex;
-  justify-content: space-between;
-}
-.cart-item:nth-of-type(2n) {
-  background-color: #dcccff;
-}
-.item-design,
-.item-type {
-  font-weight: bold;
-}
-.item-id {
-  display: none;
-}
-#cart-total {
-  border-top: 2px solid #932f6d;
-  margin-top: 1rem;
-  padding-top: 1rem;
-  font-size: 1.3em;
-  font-weight: bold;
-  text-align: end;
-}
-#checkout {
-  /* border: none; */
-  border: 2px solid #932f6d;
-  background-color: #932f6d;
-  color: white;
-  padding: 0.5rem 3rem;
-  margin-bottom: 1rem;
-  border-radius: 0.5rem;
-  font-size: 1.3em;
-  transition: 200ms ease-in-out;
-}
-#checkout:hover {
-  background-color: white;
-  color: #932f6d;
-}
-#view-cart {
-  display: block;
-  margin: 0 auto;
-}
-#view-cart button {
-  border: none;
-  background-color: transparent;
-  color: black;
-}
-#view-cart button:hover {
-  text-decoration: underline;
-}
 .toast-header img {
   width: 2rem;
 }
@@ -210,9 +107,6 @@ input.button:hover {
   background-color: #f6f2ff;
 }
 @media (max-width: 768px) {
-  .nav-item:hover {
-    border-bottom: 2px solid #f6f2ff;
-  }
   #mc-first-last-container,
   #contact-content-container {
     flex-direction: column;
@@ -220,8 +114,5 @@ input.button:hover {
   #contact-content-container a {
     width: 100%;
     border-bottom: none;
-  }
-  #cart-icon {
-    width: 1.5rem;
   }
 }

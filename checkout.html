@@ -49,12 +49,12 @@
     <script src="https://www.paypal.com/sdk/js?client-id=AQ1gxDLveJGJwfMTvbWnfSdKfjO6-4DBbhkGBgWDHjwDpYz6xZJuDcZq9mwxcuzJo_LCPuEJSx4IaOAC&components=buttons"></script>
     <!-- Reusable Components -->
     <script src="components/contact.js"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/banner.js"></script>
   </head>
   <body>
-    <button id="back-btn" class="checkout-nav-btn">Back</button>
-    <a href="index.html">
-      <button id="home-btn" class="checkout-nav-btn">Home</button>
-    </a>
+    <navbar-component id="navcomp" isProductPage="false"></navbar-component>
+    <banner-component></banner-component>
     <h1>Checkout</h1>
     <!-- Checkout Container -->
     <section id="checkout-section">

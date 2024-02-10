@@ -27,28 +27,9 @@ h2 {
   font-weight: 600;
   transition: 200ms ease-in-out;
 }
-#back-btn {
-  left: 0;
-  color: #932f6d;
-  background-color: white;
-}
-#home-btn {
-  right: 0;
-  background-color: #932f6d;
-  color: white;
-}
-#back-btn:hover {
-  color: white;
-  background-color: #932f6d;
-}
-#home-btn:hover {
-  background-color: white;
-  color: #932f6d;
-}
 #checkout-container {
   width: 90%;
   margin: 0 auto;
-  /* border: 1px solid red; */
   color: #420039;
 }
 .checkout-item {
@@ -104,12 +85,8 @@ form {
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
-/* form label input,
-form label {
-  display: block;
-} */
 .input-half {
-  width: 49.5%;
+  width: 49%;
 }
 .input-full {
   width: 100%;

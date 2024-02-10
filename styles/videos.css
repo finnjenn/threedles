@@ -5,16 +5,9 @@ h1 {
   color: #420039;
   margin-top: 2rem;
 }
-.video-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-}
 .item-container {
   text-align: center;
   margin-bottom: 2rem;
-  /* border: 1px solid red; */
 }
 .item-container p {
   font-family: "Italianno", cursive;

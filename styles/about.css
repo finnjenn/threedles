@@ -12,7 +12,6 @@ h2 {
   color: #420039;
   font-size: 3em;
   text-align: center;
-  /* margin: 0 1rem; */
   margin-bottom: 1rem;
   text-wrap: balance;
 }
@@ -31,7 +30,6 @@ h2 {
   text-align: center;
   text-wrap: balance;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /* border: 1px solid black; */
 }
 #kurdy-image {
   width: 25rem;
@@ -44,8 +42,6 @@ h2 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.1em;
-  /* border-left: 2px solid #420039;
-  border-right: 2px solid #420039; */
 }
 #about-body h3 {
   font-family: Italianno, cursive;

@@ -1,0 +1,29 @@
+h1 {
+  font-family: "Italianno", cursive;
+  text-align: center;
+  color: #420039;
+  font-size: 4em;
+  text-decoration: underline 3px solid;
+  text-underline-offset: 0.5rem;
+  margin-top: 2rem;
+}
+h2 {
+  font-family: "Italianno", cursive;
+  color: #420039;
+  font-size: 3em;
+  margin: 1rem;
+  text-wrap: balance;
+}
+p {
+  color: #420039;
+  margin: 1rem;
+  text-wrap: balance;
+  font-size: 1.2em;
+  line-height: 35px;
+  letter-spacing: 1px;
+}
+img {
+  width: 30rem;
+  display: block;
+  margin: 0 auto;
+}
