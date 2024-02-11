@@ -1,5 +1,5 @@
+// Animation for index page Threedles header
 const homeMainHeader = document.querySelector("#home-main-header");
-
 window.addEventListener("DOMContentLoaded", () => {
   if (homeMainHeader) homeMainHeader.classList.add("show");
 });
@@ -27,7 +27,6 @@ function getItemInfo() {
   let fullImgSrc = document.querySelector("#product-img").src;
   let startIndex = fullImgSrc.indexOf("assets");
   let imgSrc = fullImgSrc.substring(startIndex);
-  console.log(design, price, color, itemType, imgSrc);
   pushToCart({
     design: design,
     price: price,
@@ -98,7 +97,6 @@ if (navcomp.getAttribute("isProductPage") === "true") {
     link.setAttribute("href", `../${currentLink}`);
   });
   navImgs.forEach((img) => {
-    console.log(img);
     let currentImg = img.getAttribute("src");
     img.setAttribute("src", `../${currentImg}`);
   });

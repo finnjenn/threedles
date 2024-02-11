@@ -69,38 +69,39 @@
       name="checkout-form"
       id="checkout-form"
     >
-      <label for="firstname" class="input-half">
+      <label class="input-half">
         First Name
         <input type="text" name="firstname" required />
       </label>
-      <label for="lastname" class="input-half">
+      <label class="input-half">
         Last Name
         <input type="text" name="lastname" required />
       </label>
-      <label for="email" class="input-full">
+      <label class="input-full">
         Email Address
         <input type="email" name="email" required />
       </label>
-      <label for="address1" class="input-full">
+      <label class="input-full">
         Street Address
         <input type="text" name="address1" required />
       </label>
-      <label for="address2" class="input-full">
+      <label class="input-full">
         Street Address Line 2
         <input type="text" name="address2" />
       </label>
-      <label for="city" class="input-half">
+      <label class="input-half">
         City
         <input type="text" name="city" required />
       </label>
-      <label for="state" class="input-half">
+      <label class="input-half">
         State
         <input type="text" name="state" required />
       </label>
-      <label for="zip" class="input-full">
+      <label class="input-full">
         ZIP Code
         <input type="text" name="zip" required />
       </label>
+      <input style="display: none" type="text" name="order" id="order-input" />
     </form>
     <button onclick="validateForm()" id="proceed-btn">
       Proceed to PayPal Purchase

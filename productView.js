@@ -4,7 +4,6 @@ function updateColorText(color) {
 }
 function changeSelected(src, color) {
   let selectOptions = document.querySelectorAll("#color option");
-  console.log(selectOptions);
   selectOptions.forEach((option) => {
     if (option.innerHTML === color) option.selected = true;
   });

@@ -1,8 +1,11 @@
 function validateForm() {
+  if (!JSON.parse(sessionStorage.getItem("cartArray"))) {
+    alert("Please add items to cart before proceeding to checkout.");
+    return;
+  }
   let formElements = document.querySelectorAll("form label input");
   let isValidForm = true;
   formElements.forEach((item) => {
-    console.log(item.checkValidity());
     if (item.checkValidity() === false) isValidForm = false;
   });
   if (isValidForm) {
@@ -12,7 +15,14 @@ function validateForm() {
     proceedBtn.scrollIntoView();
   } else alert("Please fill out all form fields before proceeding.");
 }
-function displayCheckout() {
+function clearForm() {
+  let formElements = document.querySelectorAll("form label input");
+  formElements.forEach((item) => {
+    item.value = "";
+  });
+}
+function displayCart() {
+  if (!JSON.parse(sessionStorage.getItem("cartArray"))) return;
   let currentCart = JSON.parse(sessionStorage.getItem("cartArray"));
   let checkoutContainer = document.querySelector("#checkout-container");
   let cartTotal = 0;
@@ -60,7 +70,7 @@ function removeItem(id) {
   currentCart = currentCart.filter((item) => item.id !== id);
   clearCart();
   sessionStorage.setItem("cartArray", JSON.stringify(currentCart));
-  displayCheckout();
+  displayCart();
 }
 function clearCart() {
   sessionStorage.removeItem("cartArray");
@@ -72,7 +82,20 @@ function clearCart() {
   let totalElement = document.querySelector("#checkout-total");
   totalElement.innerHTML = "Total : $<span>0</span>";
 }
-displayCheckout();
+//Puts order into text form
+function getOrder() {
+  if (!JSON.parse(sessionStorage.getItem("cartArray"))) return;
+  let currentCart = JSON.parse(sessionStorage.getItem("cartArray"));
+  let orderInputElement = document.querySelector("#order-input");
+  let order = ``;
+  currentCart.forEach((item) => {
+    order += `${item.design}, ${item.color}, ${item.itemType}, $${item.price} || `;
+  });
+  orderInputElement.value = order;
+  console.log(orderInputElement.value);
+}
+displayCart();
+getOrder();
 
 paypal
   .Buttons({
@@ -101,6 +124,7 @@ paypal
         // Handle the successful payment here
         let checkoutForm = document.querySelector("#checkout-form");
         checkoutForm.submit();
+        clearCart();
         alert("Transaction completed by " + details.payer.name.given_name);
       });
     },
