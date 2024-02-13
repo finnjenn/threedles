@@ -63,7 +63,7 @@
   position: relative;
 }
 .product-img-container img {
-  margin: 1rem 0;
+  margin: 3px 0;
   width: 15rem;
   height: 20rem;
   object-fit: contain;
@@ -75,7 +75,6 @@
   background-color: #420039;
   color: white;
   padding: 0.25rem 0.75rem;
-  /* font-weight: bold; */
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
@@ -141,6 +140,10 @@
   }
   .product-img-container {
     border-bottom: none;
+  }
+  .product-container p {
+    margin-top: 0;
+    margin-bottom: 1rem;
   }
   .buy-now-btn {
     padding: 0.5rem 1.5rem;
