@@ -133,13 +133,9 @@
 @media (max-width: 768px) {
   #home-main {
     width: 100%;
-    border: none;
   }
   #home-main h1 {
     font-size: 8em;
-  }
-  .product-img-container {
-    border-bottom: none;
   }
   .product-container p {
     margin-top: 0;
